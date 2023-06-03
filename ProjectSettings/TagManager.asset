@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Yes
   - No
+  - Image1
   layers:
   - Default
   - TransparentFX

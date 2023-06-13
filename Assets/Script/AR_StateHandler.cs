@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class StateHandler : MonoBehaviour
+public class AR_StateHandler : MonoBehaviour
 {
 	public GameObject passed;
 	public GameObject not_yet;
@@ -30,17 +30,17 @@ public class StateHandler : MonoBehaviour
     }
 
 	int map_playerperf_index_to_scence_index(int playerperf_index){
-		if(playerperf_index==0)return 10;
-		if(playerperf_index==1)return 20;
-		if(playerperf_index==2)return 30;
-		if(playerperf_index==3)return 40;
-		if(playerperf_index==4)return 50;
-		if(playerperf_index==5)return 61;
-		if(playerperf_index==6)return 62;
-		if(playerperf_index==7)return 63;
-		if(playerperf_index==8)return 64;
-		if(playerperf_index==9)return 70;
-		if(playerperf_index==10)return 80;
+		if(playerperf_index==10)return 0;
+		if(playerperf_index==20)return 1;
+		if(playerperf_index==30)return 2;
+		if(playerperf_index==40)return 3;
+		if(playerperf_index==50)return 4;
+		if(playerperf_index==61)return 5;
+		if(playerperf_index==62)return 6;
+		if(playerperf_index==63)return 7;
+		if(playerperf_index==64)return 8;
+		if(playerperf_index==70)return 9;
+		if(playerperf_index==80)return 10;
 		return 0;
 	}
 
@@ -50,7 +50,7 @@ public class StateHandler : MonoBehaviour
 		Debug.Log(next_state);
 		if(value_scanned==next_state){
 			// goto specific scene
-			// SceneManager.LoadScene("some_scence_name", LoadSceneMode.Single);
+			SceneManager.LoadScene(scene_names[map_playerperf_index_to_scence_index(next_state)], LoadSceneMode.Single);
 		}
 		if(value_scanned>next_state)
 		{

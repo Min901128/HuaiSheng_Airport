@@ -6,9 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartAndMenu.unity
+    guid: e1699e1a967361e4f8fca4d12317d57d
+  - enabled: 1
+    path: Assets/Scenes/check-in counter.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
     path: Assets/Scenes/tiny_game.unity
     guid: c02cf960ea8641a4b95063fc333c9e9e
   - enabled: 1
     path: Assets/SamplesResources/Scenes/0-Main.unity
     guid: a09cb257d566c489595b16ab37547666
+  - enabled: 1
+    path: Assets/Scenes/ar.unity
+    guid: f743bab5131442d4e9112023b2926d04
+  - enabled: 1
+    path: Assets/Scenes/boarding schedule.unity
+    guid: 0501d2b8f37006d46b01ec390a2af55e
+  - enabled: 1
+    path: Assets/Scenes/before boarding.unity
+    guid: 3b20dce92f735b448a64d2c27b450c3d
+  - enabled: 1
+    path: Assets/Scenes/tmp_4.unity
+    guid: dcbe3a8c6c1d1474383f7cfb74cfb410
+  - enabled: 1
+    path: Assets/Scenes/tmp_6-1.unity
+    guid: 89ed7784f4c0aee4dac2e36d0d5a3221
+  - enabled: 1
+    path: Assets/Scenes/tmp_6-2.unity
+    guid: 497a9ac2b780f9146a5121d34c64011a
+  - enabled: 1
+    path: Assets/Scenes/tmp_6-3.unity
+    guid: d9eebe84ef696b040a664a53abef1a8e
+  - enabled: 1
+    path: Assets/Scenes/tmp_6-4.unity
+    guid: 2d6c197850cab404ab4d8bb0c28fab66
+  - enabled: 1
+    path: Assets/Scenes/AirPlanePuzzle.unity
+    guid: 1fff53aab55b7694c8b79fd6c249c380
+  - enabled: 1
+    path: Assets/Scenes/DutyFreeShop.unity
+    guid: 68fd61ec6d3d0f0459347c3341222259
   m_configObjects: {}

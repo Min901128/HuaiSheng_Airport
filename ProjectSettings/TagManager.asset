@@ -27,6 +27,9 @@ TagManager:
   - Singapore
   - Tokyo
   - Seoul
+  - 1
+  - 2
+  - 3
   layers:
   - Default
   - TransparentFX

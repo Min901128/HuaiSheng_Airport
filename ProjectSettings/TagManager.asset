@@ -3,7 +3,30 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Collider4
+  - Collider3
+  - Collider5
+  - Collider1
+  - Puzzle2
+  - Puzzle3
+  - Puzzle7
+  - Puzzle5
+  - Puzzle4
+  - Puzzle8
+  - Collider8
+  - Collider2
+  - Collider6
+  - Puzzle6
+  - Collider9
+  - Collider7
+  - Puzzle1
+  - Puzzle9
+  - No
+  - Yes
+  - Singapore
+  - Tokyo
+  - Seoul
   layers:
   - Default
   - TransparentFX

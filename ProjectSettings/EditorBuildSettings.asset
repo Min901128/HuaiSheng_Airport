@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SamplesResources/Scenes/0-Main.unity
-    guid: a09cb257d566c489595b16ab37547666
+    path: Assets/Scenes/StartAndMenu.unity
+    guid: e1699e1a967361e4f8fca4d12317d57d
+  - enabled: 1
+    path: Assets/Scenes/AirPlanePuzzle.unity
+    guid: 1fff53aab55b7694c8b79fd6c249c380
+  - enabled: 1
+    path: Assets/Scenes/DutyFreeShop.unity
+    guid: 68fd61ec6d3d0f0459347c3341222259
+  - enabled: 1
+    path: Assets/Scenes/check-in counter.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/before boarding.unity
+    guid: 3b20dce92f735b448a64d2c27b450c3d
   m_configObjects: {}

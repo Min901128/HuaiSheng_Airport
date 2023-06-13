@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DutyFreeShop.unity
     guid: 68fd61ec6d3d0f0459347c3341222259
+  - enabled: 1
+    path: Assets/Scenes/mission_list.unity
+    guid: 30377353f4ea046478f4446cc038d4cb
   m_configObjects: {}

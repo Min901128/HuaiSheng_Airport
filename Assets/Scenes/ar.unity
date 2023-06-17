@@ -1800,14 +1800,14 @@ MonoBehaviour:
   not_yet: {fileID: 1975274185}
   scene_names:
   - check-in counter
-  - 
+  - boarding schedule
   - before boarding
-  - 
+  - tmp_4
   - tiny_game
-  - 6-1
-  - 6-2
-  - 6-3
-  - 6-4
+  - tmp_6-1
+  - tmp_6-2
+  - tmp_6-3
+  - tmp_6-4
   - AirPlanePuzzle
   - DutyFreeShop
 --- !u!1 &1873936890

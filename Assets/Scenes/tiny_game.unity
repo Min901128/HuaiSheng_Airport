@@ -554,7 +554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7E7C\u7E8C"
+  m_Text: "\u4E0B\u4E00\u95DC"
 --- !u!222 &988342670
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1055,7 +1055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1309798562
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1365,8 +1365,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 05c4e1df5996c924f9e0cde19a9c4363, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1395,6 +1395,7 @@ GameObject:
   - component: {fileID: 1421122302}
   - component: {fileID: 1421122301}
   - component: {fileID: 1421122300}
+  - component: {fileID: 1421122304}
   - component: {fileID: 1421122303}
   m_Layer: 0
   m_Name: Button
@@ -1467,6 +1468,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1421122304}
+        m_TargetAssemblyTypeName: SetNextARState, Assembly-CSharp
+        m_MethodName: setState
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 61
+          m_FloatArgument: 0
+          m_StringArgument: ar
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1421122303}
         m_TargetAssemblyTypeName: ChangeSceneWithButton, Assembly-CSharp
         m_MethodName: LoadScene
@@ -1527,6 +1540,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97892d503bf105b488bb9c34916243e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1421122304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421122298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90fcda0ef7d1eb64cb4d7295828ba521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1645700630

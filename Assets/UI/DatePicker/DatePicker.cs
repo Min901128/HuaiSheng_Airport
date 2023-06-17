@@ -12,6 +12,8 @@ namespace UI.Dates
     [ExecuteInEditMode]
     public class DatePicker : MonoBehaviour
     {
+        public Text YouSelctDate;
+
         #region Dates
         [SerializeField]
         private DateSelectionMode m_DateSelectionMode = DateSelectionMode.SingleDate;
@@ -712,6 +714,12 @@ namespace UI.Dates
             if (DateSelectionMode == Dates.DateSelectionMode.SingleDate)
             {
                 SelectedDate = date;
+                /*Type objectType = SelectedDate.GetType();
+                Debug.Log("型別為:" + objectType);*/
+                string DateString = SelectedDate.ToString();
+                YouSelctDate.text = DateString;
+                /*YouSelctDate = SelectedDate.ToString(); // 將SelectedDate轉換為字串
+                Debug.Log("你選擇了" + date);*/
             }
             else
             {

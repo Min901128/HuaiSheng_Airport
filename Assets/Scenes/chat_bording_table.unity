@@ -311,17 +311,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   person:
-  - "\u6211"
   - "\u5C0F\u7F8E"
   - "\u6211"
-  - "\u6AC3\u53F0\u4EBA\u54E1"
+  - "\u6642\u7A7A\u8B66\u5BDF"
+  - "\u6A5F\u4E0A\u4E58\u5BA2"
+  - "\u795E\u79D8\u4EBA\u58EB"
+  - "\u7A7A\u59D0"
+  - "\u963F\u5FB7"
   context:
   - "\u4ECA\u5929\u5C31\u662F\u51FA\u570B\u7684\u65E5\u5B50\u2026\u4E0D\u77E5\u9053\u70BA\u751A\u9EBC\uFF0C\u6709\u7A2E\u4ECA\u5929\u6703\u4F86\u5834\u5947\u5999\u5192\u96AA\u7684\u611F\u89BA\u2026. "
   - "\u563F!\u4F60\u5728\u653E\u7A7A\u4EC0\u9EBC?\u8981\u5230\u6211\u5011\u4E86! "
   - "\u554A!\u7D42\u65BC\u6392\u5230\u6211\u4E86"
   - "\u8ACB\u51FA\u793A\u4F60\u7684\u8B49\u4EF6 "
+  - 1
+  - 2
+  - 3
+  frame:
+  - {fileID: 21300000, guid: 41d7e199eec27f44bb6745d28e05712e, type: 3}
+  - {fileID: 21300000, guid: 3795d816333560442b9894bff26cfd46, type: 3}
+  - {fileID: 21300000, guid: 490e5992db1867141897bcd9faee66e4, type: 3}
+  - {fileID: 21300000, guid: 484c07ecd9c820a42bd72a115b4944ab, type: 3}
+  - {fileID: 21300000, guid: 93efc145ed1922442a845ac8826e1d92, type: 3}
+  - {fileID: 21300000, guid: 1ee311365b2e8764e81782bea2fb23c7, type: 3}
+  - {fileID: 21300000, guid: 57244608ce1575e4b81ab64e73a9424a, type: 3}
   person_obj: {fileID: 1536661773}
   context_obj: {fileID: 1233036387}
+  ImageFrame: {fileID: 1512968746}
 --- !u!4 &382637491
 Transform:
   m_ObjectHideFlags: 0
@@ -433,6 +448,7 @@ RectTransform:
   - {fileID: 1536661772}
   - {fileID: 1233036386}
   - {fileID: 256414796}
+  - {fileID: 1512968744}
   - {fileID: 1784414875}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -741,6 +757,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506475112}
   m_CullTransparentMesh: 1
+--- !u!1 &1512968743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1512968744}
+  - component: {fileID: 1512968745}
+  - component: {fileID: 1512968746}
+  m_Layer: 0
+  m_Name: Image_Frame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1512968744
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512968743}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.15, y: 1.45, z: 1.15}
+  m_Children: []
+  m_Father: {fileID: 1160652076}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -16, y: -285}
+  m_SizeDelta: {x: 1675.711, y: 331.2397}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1512968745
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512968743}
+  m_CullTransparentMesh: 1
+--- !u!114 &1512968746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512968743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1536661771
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,7 +844,7 @@ GameObject:
   - component: {fileID: 1536661774}
   - component: {fileID: 1536661773}
   m_Layer: 5
-  m_Name: person_talking
+  m_Name: person_WhoIsTalking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -945,7 +1036,7 @@ RectTransform:
   m_Children:
   - {fileID: 1506475113}
   m_Father: {fileID: 1160652076}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

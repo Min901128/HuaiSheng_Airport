@@ -22,6 +22,6 @@ public class MakePassport : MonoBehaviour
         YourNationality.text = Nationality.text;
         YourSex.text = Sex.text;
         YourBirthPlace.text = BirthPlace.text;
-        YourBirthDay.text = BirthDay.text;
+        //YourBirthDay.text = BirthDay.text;
     }
 }

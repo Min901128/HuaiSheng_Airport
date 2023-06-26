@@ -10,7 +10,7 @@ public class ChoosePhoto : MonoBehaviour
     public Image PhotoOnPassport;
     public GameObject ChoosePanel;
     public GameObject Button;
-
+	public GameObject ButtonTakePicture;
 
     public void OnButtonClick(){
         PhotoForSetActive.SetActive(true);
@@ -18,5 +18,6 @@ public class ChoosePhoto : MonoBehaviour
         PhotoOnPassport.sprite = GetComponent<Image>().sprite;
         Button.transform.position = new Vector3(1163, 850, 0);
         ChoosePanel.SetActive(false);
+		ButtonTakePicture.transform.position = new Vector3(1542, 850, 0);
     }
 }

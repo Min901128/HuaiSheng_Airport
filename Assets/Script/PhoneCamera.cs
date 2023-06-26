@@ -1,19 +1,25 @@
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class PhoneCamera : MonoBehaviour 
 {
-    private bool camAvailable;
+	private bool camAvailable;
 	private WebCamTexture backCam;
-	private Texture defaultBackground;
+	private int webcamIndex;
+	private int takePhotoCountdown=-1;
 
 	public RawImage background;
 	public AspectRatioFitter fit;
+	public Dropdown webcamDropdown;
+	public GameObject DropdownGameObject;
+	public GameObject TakePhotoGameObject;
 
-	private void Start(){
-		// defaultBackground = background.texture;
+	List<string> WebCamDeviceNames = new List<string>();
+
+	void Start(){
 		WebCamDevice[] devices = WebCamTexture.devices;
 
 		if (devices.Length == 0){
@@ -21,16 +27,20 @@ public class PhoneCamera : MonoBehaviour
 			camAvailable = false;
 			return;
 		}
+		webcamDropdown.ClearOptions();
 
-		backCam=new WebCamTexture(1920,1080);
-		
-		// for(int i=0;i<devices.Length;i++){
-		// 	// Debug.Log(devices[1].name);
-		// 	backCam=new WebCamTexture(devices[0].name, Screen.width, Screen.height);
-		// 	// if(!devices[i].isFrontFacing){
-		// 	// 	backCam=new WebCamTexture(devices[i].name, Screen.width, Screen.height);
-		// 	// }
-		// }
+		for(int i=0;i<devices.Length;i++){
+			WebCamDeviceNames.Add(devices[i].name);
+			if(devices[i].isFrontFacing){
+				backCam=new WebCamTexture(devices[i].name);
+				webcamIndex=i;
+			}
+		}
+		backCam=new WebCamTexture(devices[0].name);
+		webcamIndex=0;
+
+		webcamDropdown.AddOptions(WebCamDeviceNames);
+		webcamDropdown.value=webcamIndex;
 
 		if(backCam==null){
 			Debug.Log("Unable to find back camera");
@@ -42,7 +52,7 @@ public class PhoneCamera : MonoBehaviour
 		camAvailable=true;
 	}
 
-	private void Update(){
+	void Update(){
 		if (!camAvailable) return;
 
 		float ratio = (float)backCam.width / (float)backCam.height;
@@ -54,11 +64,38 @@ public class PhoneCamera : MonoBehaviour
 		int orient = -backCam.videoRotationAngle;
 		background.rectTransform.localEulerAngles = new Vector3(0,0,orient);
 
-		if (Input.GetKeyDown("space"))
-        {
-            Debug.Log("Capturing screenshot");
-        	ScreenCapture.CaptureScreenshot("SomeLevel.png");
-        }
+		if(takePhotoCountdown>=0)takePhotoCountdown--;
+		if(takePhotoCountdown==0){
+			string path=Path.Combine(Application.persistentDataPath,"selfie.png");
+			ScreenCapture.CaptureScreenshot(path);
+			Debug.Log("Stored in "+path);
+			DropdownGameObject.SetActive(true);
+			TakePhotoGameObject.SetActive(true);
+		}
 	}
 
+	public void changeWebCam(){
+		if(webcamDropdown.value==webcamIndex)return;
+		backCam.Stop();
+
+		webcamIndex=webcamDropdown.value;
+		backCam=new WebCamTexture(WebCamDeviceNames[webcamIndex]);
+
+		if(backCam==null){
+			Debug.Log("Unavalible camera:"+WebCamDeviceNames[webcamIndex]);
+			camAvailable=false;
+			return;
+		}
+
+		backCam.Play();
+		background.texture=backCam;
+		camAvailable=true;
+	}
+
+	public void TakePhoto(){
+		Debug.Log("Capturing screenshot");
+		DropdownGameObject.SetActive(false);
+		TakePhotoGameObject.SetActive(false);
+		takePhotoCountdown=2;
+	}
 }

@@ -9,16 +9,6 @@ public class DutyFreeShop : MonoBehaviour
     public Text Panel_Comform_Text_CostMoney;
     public Text CurrentMoney;
     public GameObject ComfirmButton;
-    
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     public void UpdateComfirmPanel(){
         Panel_Comform_Text_CostMoney.text = Money.text;

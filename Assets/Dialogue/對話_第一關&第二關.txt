@@ -1,0 +1,53 @@
+----登機櫃台----
+
+我：今天就是出國的日子…不知道為甚麼，有種今天會來場奇妙冒險的感覺….
+小美：嘿!你在放空什麼?要到我們了!
+我：啊!終於排到我了
+櫃台人員：請出示你的證件
+
+(觸發製作證件關卡…)
+
+
+----英文版----
+Me:
+Today is the day of going abroad... I don't know why, but I have a feeling that today will be a marvelous adventure...
+
+Mei：
+Hey! What are you daydreaming about? It's our turn now!
+
+Me：
+Ah! It's finally my turn.
+
+Counter staff：
+Your passport please.
+
+
+----飛機起降時刻表----
+
+小美：這是我第一次出國耶!好興奮喔!
+我：恩…等等!我們是要去哪?
+
+(觸發詢問目的地(新加坡/日本東京/韓國首爾)…)
+
+我：恩…我記得登機時間是…
+阿瑞：不是…你們出發前沒有做好功課嗎?
+阿瑞：算了…我們去對一下時刻表，就知道接下來怎麼安排了!
+
+(觸發詢問時間、航廈…)
+
+
+----英文版----
+Mei：
+This is my first time going abroad! So excited!
+
+Me：
+Um... wait! Where are we going?
+
+Me：
+Well...I remember the boarding time is...
+
+Ray：
+Really? Did you not make preparations before your departure?
+
+Ray：
+Alright... Let's check the timetable and we'll know the next step!

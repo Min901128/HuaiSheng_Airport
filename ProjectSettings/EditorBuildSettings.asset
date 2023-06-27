@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/mission_list.unity
     guid: 30377353f4ea046478f4446cc038d4cb
+  - enabled: 1
+    path: Assets/Scenes/test_phoneCamera.unity
+    guid: 9ec6931bb2f3f8a4db93b54cf83e5849
   m_configObjects: {}

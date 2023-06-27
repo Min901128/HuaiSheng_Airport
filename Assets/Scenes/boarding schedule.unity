@@ -4048,6 +4048,7 @@ GameObject:
   - component: {fileID: 614394119}
   - component: {fileID: 614394118}
   - component: {fileID: 614394122}
+  - component: {fileID: 614394123}
   m_Layer: 5
   m_Name: Singapore
   m_TagString: Singapore
@@ -4171,6 +4172,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 614394123}
+        m_TargetAssemblyTypeName: RecordWhereIWillGo, Assembly-CSharp
+        m_MethodName: Record
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &614394119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4248,6 +4261,19 @@ MonoBehaviour:
   Panel_Next: {fileID: 0}
   Correct: {fileID: 0}
   Error: {fileID: 0}
+--- !u!114 &614394123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614394117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ebb81f4fe91764e88836e209b2218d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CountryButton: {fileID: 614394117}
 --- !u!1 &643332588
 GameObject:
   m_ObjectHideFlags: 0
@@ -4561,7 +4587,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &705290322
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5778,7 +5804,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &891341442
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5879,6 +5905,7 @@ GameObject:
   - component: {fileID: 986823109}
   - component: {fileID: 986823108}
   - component: {fileID: 986823112}
+  - component: {fileID: 986823113}
   m_Layer: 5
   m_Name: Tokyo
   m_TagString: Tokyo
@@ -6002,6 +6029,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 986823113}
+        m_TargetAssemblyTypeName: RecordWhereIWillGo, Assembly-CSharp
+        m_MethodName: Record
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &986823109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6079,6 +6118,19 @@ MonoBehaviour:
   Panel_Next: {fileID: 0}
   Correct: {fileID: 0}
   Error: {fileID: 0}
+--- !u!114 &986823113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986823107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ebb81f4fe91764e88836e209b2218d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CountryButton: {fileID: 986823107}
 --- !u!1 &998434598
 GameObject:
   m_ObjectHideFlags: 0
@@ -6386,7 +6438,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1023962184
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9727,6 +9779,7 @@ GameObject:
   - component: {fileID: 1538323663}
   - component: {fileID: 1538323662}
   - component: {fileID: 1538323665}
+  - component: {fileID: 1538323666}
   m_Layer: 5
   m_Name: Seoul
   m_TagString: Seoul
@@ -9870,6 +9923,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1538323666}
+        m_TargetAssemblyTypeName: RecordWhereIWillGo, Assembly-CSharp
+        m_MethodName: Record
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1538323663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9927,6 +9992,19 @@ MonoBehaviour:
   Panel_Next: {fileID: 0}
   Correct: {fileID: 0}
   Error: {fileID: 0}
+--- !u!114 &1538323666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538323660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ebb81f4fe91764e88836e209b2218d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CountryButton: {fileID: 1538323660}
 --- !u!1 &1539624221
 GameObject:
   m_ObjectHideFlags: 0

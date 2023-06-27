@@ -7,6 +7,10 @@ public class chat_event : MonoBehaviour
 {
 	public Image DialogueImage;
 	public GameObject Button;
+	public Button ButtonDialogue; //tmp6-1
+	public GameObject ButtonYes; //tmp6-1
+	public GameObject ButtonNo; //tmp6-1
+	public GameObject NextPanel; //tmp6-1
 	public Sprite[] DialogueSprite;
 	
 	int chat_index = 0;
@@ -35,6 +39,20 @@ public class chat_event : MonoBehaviour
 			if(chat_index == 1){
 				Button.SetActive(false);
 			}
+			chat_index++;
+			DialogueImage.sprite = DialogueSprite[chat_index];
+		}
+	}
+
+	public void NextChat_Temp_6_1(){
+		if(chat_index == length-1){
+			//按鈕交互關掉、要不要按鈕出現
+			ButtonDialogue.interactable = false;
+			Debug.Log("按鈕交互已關閉");
+			ButtonYes.SetActive(true);
+			ButtonNo.SetActive(true);
+		}
+		else{
 			chat_index++;
 			DialogueImage.sprite = DialogueSprite[chat_index];
 		}

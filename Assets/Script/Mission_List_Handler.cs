@@ -5,17 +5,19 @@ using UnityEngine;
 public class Mission_List_Handler : MonoBehaviour
 {
 	public GameObject[] missons;
-	public string somekey="next_state";
+	public GameObject[] btns;
+	string somekey="finished_state";
     // Start is called before the first frame update
     void Start()
     {
+		PlayerPrefs.SetInt(somekey,90);
+		PlayerPrefs.Save();
+		closeAllMissions();
 		if(missons.Length==0)return;
 		int next_state=PlayerPrefs.GetInt(somekey,0);
-		for (int i = 0; i < missons.Length; i++)
+		for (int i = 0; i < next_state/10; i++)
 		{
-			if(PlayerPrefs.GetInt(somekey+i,0)==1){
-				missons[i].SetActive(true);
-			}
+			btns[i].SetActive(true);
 		}
     }
 
@@ -24,4 +26,16 @@ public class Mission_List_Handler : MonoBehaviour
     {
         
     }
+
+	void closeAllMissions(){
+		foreach (var mission in missons)
+		{
+			mission.SetActive(false);
+		}
+	}
+
+	public void openMission(int id){
+		closeAllMissions();
+		missons[id].SetActive(true);
+	}
 }

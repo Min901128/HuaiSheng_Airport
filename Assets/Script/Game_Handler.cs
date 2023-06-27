@@ -62,6 +62,8 @@ public class Game_Handler : MonoBehaviour
 		Score_Points++;
 		Destroy(target_clicked,0);
 		Score.text=Score_Points.ToString();
-		createNewTarget();
+		if(count_down>=0){
+			createNewTarget();
+		}
 	}
 }

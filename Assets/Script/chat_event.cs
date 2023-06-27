@@ -57,7 +57,50 @@ public class chat_event : MonoBehaviour
 			DialogueImage.sprite = DialogueSprite[chat_index];
 		}
 	}
+
+	public void NextChat_Temp_6_2__6_3(){
+		if(chat_index == length-1){
+			NextPanel.SetActive(true);
+		}
+		else{
+			chat_index++;
+			DialogueImage.sprite = DialogueSprite[chat_index];
+		}
+	}
+
+	public void NextChat_BeforeBording(){
+		if(chat_index == length-3){
+			//按鈕交互關掉、要不要按鈕出現
+			ButtonDialogue.interactable = false;
+			Debug.Log("按鈕交互已關閉");
+			ButtonYes.SetActive(true);
+			ButtonNo.SetActive(true);
+		}
+		else{
+			if(chat_index == length-3 && ButtonYes.gameObject.activeSelf){
+				ButtonDialogue.interactable = true;
+				ButtonYes.SetActive(false);
+				ButtonNo.SetActive(false);
+				Debug.Log("Hi");
+			}
+			chat_index++;
+			DialogueImage.sprite = DialogueSprite[chat_index];
+		}
+	}
 	
+	public void NextChat_TinyGame(){
+		if(chat_index == length-1){
+			Button.SetActive(false);
+			NextPanel.SetActive(true);
+		}
+		else{
+			if(chat_index == 4){
+				Button.SetActive(false);
+			}
+			chat_index++;
+			DialogueImage.sprite = DialogueSprite[chat_index];
+		}
+	}
 	/*public string[] person;
 	public string[] context;
 	public Sprite[] frame;	

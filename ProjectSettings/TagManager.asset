@@ -30,6 +30,10 @@ TagManager:
   - 1
   - 2
   - 3
+  - 6_1
+  - 6_2
+  - 6_3
+  - 6_4
   layers:
   - Default
   - TransparentFX

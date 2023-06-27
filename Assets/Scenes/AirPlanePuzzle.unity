@@ -1177,8 +1177,8 @@ GameObject:
   - component: {fileID: 590342328}
   - component: {fileID: 590342327}
   - component: {fileID: 590342326}
-  - component: {fileID: 590342330}
   - component: {fileID: 590342329}
+  - component: {fileID: 590342330}
   m_Layer: 5
   m_Name: Button_Next
   m_TagString: Untagged
@@ -1287,13 +1287,13 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 590342330}
-        m_TargetAssemblyTypeName: SetNextARState, Assembly-CSharp
-        m_MethodName: setState
+        m_TargetAssemblyTypeName: AR_StateHandler, Assembly-CSharp
+        m_MethodName: SetFinishedARState
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 80
+          m_IntArgument: 70
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -1369,9 +1369,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 590342324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90fcda0ef7d1eb64cb4d7295828ba521, type: 3}
+  m_Script: {fileID: 11500000, guid: a07f48f075c8f664488aa685931093a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  passed: {fileID: 0}
+  not_yet: {fileID: 0}
+  scene_names: []
 --- !u!1 &654721401
 GameObject:
   m_ObjectHideFlags: 0

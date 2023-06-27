@@ -1044,6 +1044,12 @@ MonoBehaviour:
   ButtonYes: {fileID: 0}
   ButtonNo: {fileID: 0}
   NextPanel: {fileID: 310264321}
+  item1: {fileID: 0}
+  item2: {fileID: 0}
+  item3: {fileID: 0}
+  item4: {fileID: 0}
+  item5: {fileID: 0}
+  item6: {fileID: 0}
   DialogueSprite:
   - {fileID: 21300000, guid: b8050ac18ec4af64684ad808654812f5, type: 3}
   - {fileID: 21300000, guid: b91b954f35f6caa4994bd5ec146351f4, type: 3}
@@ -1981,8 +1987,8 @@ GameObject:
   - component: {fileID: 1421122302}
   - component: {fileID: 1421122301}
   - component: {fileID: 1421122300}
-  - component: {fileID: 1421122304}
   - component: {fileID: 1421122303}
+  - component: {fileID: 1421122304}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -2055,13 +2061,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1421122304}
-        m_TargetAssemblyTypeName: SetNextARState, Assembly-CSharp
-        m_MethodName: setState
+        m_TargetAssemblyTypeName: AR_StateHandler, Assembly-CSharp
+        m_MethodName: SetFinishedARState
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 61
+          m_IntArgument: 50
           m_FloatArgument: 0
           m_StringArgument: ar
           m_BoolArgument: 0
@@ -2137,9 +2143,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1421122298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90fcda0ef7d1eb64cb4d7295828ba521, type: 3}
+  m_Script: {fileID: 11500000, guid: a07f48f075c8f664488aa685931093a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  passed: {fileID: 0}
+  not_yet: {fileID: 0}
+  scene_names: []
 --- !u!1 &1645700630
 GameObject:
   m_ObjectHideFlags: 0

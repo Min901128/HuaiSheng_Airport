@@ -749,11 +749,11 @@ MonoBehaviour:
   MoneyText: {fileID: 2012740034}
   Hint_Text: {fileID: 1727866441}
   DisableAllPanel: {fileID: 719201359}
-  CardBackSprite: {fileID: 0}
+  CardBackSprite: {fileID: 21300000, guid: 9f56bea5b8674754284ac5b558ce3480, type: 3}
   CardValueSprite:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: f6e1dc89833c20546a06e44494a1faee, type: 3}
+  - {fileID: 21300000, guid: efea6ac70b54d0e43aa4f90d6a8aed88, type: 3}
+  - {fileID: 21300000, guid: 9aef90a277ecf8648bd110e773fb5160, type: 3}
 --- !u!4 &1001055320
 Transform:
   m_ObjectHideFlags: 0
@@ -883,8 +883,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9f56bea5b8674754284ac5b558ce3480, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1161,8 +1161,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9f56bea5b8674754284ac5b558ce3480, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1294,8 +1294,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9f56bea5b8674754284ac5b558ce3480, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

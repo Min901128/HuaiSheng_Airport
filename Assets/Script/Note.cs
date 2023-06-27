@@ -15,6 +15,7 @@ public class Note : MonoBehaviour
     public Sprite[] Person3Sprite; //德文洛根
     public Sprite[] Person4Sprite; //金漢軟
     public Sprite[] IsCollected; //是否完成蒐集
+    public Button Button;
 
 
     private const string P1Key = "P1";
@@ -30,6 +31,11 @@ public class Note : MonoBehaviour
         int P3Index = PlayerPrefs.GetInt(P3Key);
         int P4Index = PlayerPrefs.GetInt(P4Key);
         int C1Index = PlayerPrefs.GetInt(C1Key);
+
+        if(P1Index == 1 && P2Index == 1 && P3Index == 1 && P4Index == 1){
+            C1Index = 1;
+            Button.interactable = true;
+        }
 
         Person1.sprite = Person1Sprite[P1Index];
         Person2.sprite = Person2Sprite[P2Index];

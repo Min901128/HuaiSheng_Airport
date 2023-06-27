@@ -18,6 +18,18 @@ public class chat_event : MonoBehaviour
 	public GameObject item5; //tmp4
 	public GameObject item6; //tmp4
 	public Sprite[] DialogueSprite;
+	public Sprite[] person2; //tmp6_final
+	public Sprite[] person3; //tmp6_final
+	public Sprite[] person4; //tmp6_final
+	public Image person2Image;
+	public Image person3Image;
+	public Image person4Image;
+	public Button ButtonDialogue2;
+	public Button ButtonDialogue3;
+	public Button ButtonDialogue4;
+	public GameObject Button2;
+	public GameObject Button3;
+	public GameObject Button4;
 	
 	int chat_index = 0;
 	int length;
@@ -25,6 +37,9 @@ public class chat_event : MonoBehaviour
 	void Start(){
 		length = DialogueSprite.Length;
 		DialogueImage.sprite = DialogueSprite[0];
+		person2Image.sprite = person2[0];
+		person3Image.sprite = person3[0];
+		person4Image.sprite = person4[0];
 	}
 	
 	public void NextChat(){
@@ -125,6 +140,53 @@ public class chat_event : MonoBehaviour
 		}
 	}
 
+	public void Final_1(){
+		if(chat_index == length-1){
+			Button.SetActive(false);
+			chat_index = 0;
+			DialogueImage.sprite = DialogueSprite[chat_index];
+		}
+		else{
+			chat_index++;
+			DialogueImage.sprite = DialogueSprite[chat_index];
+		}
+	}
+
+	public void Final_2(){
+		if(chat_index == length-1){
+			Button2.SetActive(false);
+			chat_index = 0;
+			person2Image.sprite = person2[chat_index];
+		}
+		else{
+			chat_index++;
+			person2Image.sprite = person2[chat_index];
+		}
+	}
+
+	public void Final_3(){
+		if(chat_index == length-1){
+			Button3.SetActive(false);
+			chat_index = 0;
+			person3Image.sprite = person3[chat_index];
+		}
+		else{
+			chat_index++;
+			person3Image.sprite = person3[chat_index];
+		}
+	}
+
+	public void Final_4(){
+		if(chat_index == length-1){
+			Button4.SetActive(false);
+			chat_index = 0;
+			person4Image.sprite = person4[chat_index];
+		}
+		else{
+			chat_index++;
+			person4Image.sprite = person4[chat_index];
+		}
+	}
 	/*public string[] person;
 	public string[] context;
 	public Sprite[] frame;	

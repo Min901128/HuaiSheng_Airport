@@ -535,6 +535,7 @@ GameObject:
   - component: {fileID: 170016656}
   - component: {fileID: 170016654}
   - component: {fileID: 170016655}
+  - component: {fileID: 170016658}
   m_Layer: 5
   m_Name: "Button_\u8490\u96C6\u60C5\u6CC1"
   m_TagString: Untagged
@@ -597,7 +598,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -611,11 +612,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 170016654}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 170016658}
+        m_TargetAssemblyTypeName: ChangeSceneWithButton, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: tmp_6-final
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &170016656
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -644,6 +657,18 @@ RectTransform:
   m_AnchoredPosition: {x: 711, y: -432}
   m_SizeDelta: {x: 730, y: 185}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &170016658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170016653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97892d503bf105b488bb9c34916243e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &190266342
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,7 +686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &190266343
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3097,7 +3122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1120290992
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4134,7 +4159,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1609020276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 190266342}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1609020276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4574,6 +4611,7 @@ MonoBehaviour:
   IsCollected:
   - {fileID: 21300000, guid: 0b8407d82878c0a42b86eb067852ab37, type: 3}
   - {fileID: 21300000, guid: 43ade55d87138724696f7776699c4289, type: 3}
+  Button: {fileID: 170016655}
 --- !u!1 &1930476159
 GameObject:
   m_ObjectHideFlags: 0

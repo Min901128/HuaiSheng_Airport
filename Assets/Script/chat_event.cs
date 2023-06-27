@@ -11,6 +11,12 @@ public class chat_event : MonoBehaviour
 	public GameObject ButtonYes; //tmp6-1
 	public GameObject ButtonNo; //tmp6-1
 	public GameObject NextPanel; //tmp6-1
+	public GameObject item1; //tmp4
+	public GameObject item2; //tmp4
+	public GameObject item3; //tmp4
+	public GameObject item4; //tmp4
+	public GameObject item5; //tmp4
+	public GameObject item6; //tmp4
 	public Sprite[] DialogueSprite;
 	
 	int chat_index = 0;
@@ -69,20 +75,15 @@ public class chat_event : MonoBehaviour
 	}
 
 	public void NextChat_BeforeBording(){
-		if(chat_index == length-3){
-			//按鈕交互關掉、要不要按鈕出現
+		if(chat_index == length-1){ //最後一個對話
+			Button.SetActive(false);
+		}
+		else if(chat_index == 3){
 			ButtonDialogue.interactable = false;
-			Debug.Log("按鈕交互已關閉");
 			ButtonYes.SetActive(true);
 			ButtonNo.SetActive(true);
 		}
 		else{
-			if(chat_index == length-3 && ButtonYes.gameObject.activeSelf){
-				ButtonDialogue.interactable = true;
-				ButtonYes.SetActive(false);
-				ButtonNo.SetActive(false);
-				Debug.Log("Hi");
-			}
 			chat_index++;
 			DialogueImage.sprite = DialogueSprite[chat_index];
 		}
@@ -103,15 +104,22 @@ public class chat_event : MonoBehaviour
 	}
 
 	public void NextChat_Tmp4(){
-		if(chat_index == length-1){
-			//按鈕交互關掉、要不要按鈕出現
+		if(chat_index == length-1){ //最後一個對話
+			Button.SetActive(false);
+		}
+		else if(chat_index == 5){
 			ButtonDialogue.interactable = false;
-			Debug.Log("按鈕交互已關閉");
-			ButtonYes.SetActive(true);
-			ButtonNo.SetActive(true);
+			item1.SetActive(true);
+			item2.SetActive(true);
+			item3.SetActive(true);
+		}
+		else if(chat_index == 9){
+			ButtonDialogue.interactable = false;
+			item4.SetActive(true);
+			item5.SetActive(true);
+			item6.SetActive(true);
 		}
 		else{
-			//if(chat_index == )
 			chat_index++;
 			DialogueImage.sprite = DialogueSprite[chat_index];
 		}

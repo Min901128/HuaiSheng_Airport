@@ -74,6 +74,10 @@ public class PhoneCamera : MonoBehaviour
 		}
 	}
 
+	private void OnDestroy() {
+		backCam.Stop();
+	}
+
 	public void changeWebCam(){
 		if(webcamDropdown.value==webcamIndex)return;
 		backCam.Stop();

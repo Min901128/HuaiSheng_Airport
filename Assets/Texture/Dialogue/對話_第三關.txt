@@ -1,0 +1,36 @@
+----登機前休息室----
+小美：這裡也太豪華了，有吃的喝的看的，還有超柔軟的沙發!
+神秘人：那是當然，這裡可是很重要的…
+阿瑞：不好意思…請問你是?
+神秘人：不用擔心，我不是什麼壞人…來吧，這個送你們!
+我：這是…糖果?
+
+(觸發選擇：收下糖果 或是 不收糖果)
+(選擇收下則背包會有「奇怪的糖果」道具)
+
+神秘人士：好啦!你們快準備一下，小心不要把違禁品帶上飛機喔!
+我：違禁品?對齁!忘了檢查了!
+
+(觸發關卡)
+
+----英文版----
+Mei：
+This place is so luxurious! There is food and drinks, things to see, and even super comfortable sofas!
+
+mysterious person：
+Of course, this place is importent...
+
+Ray：
+I'm sorry... May I ask who you are?
+
+mysterious person：
+Don't worry, I'm not a bad person. Here, this one's for you!
+
+Me：
+This is...candy?
+
+mysterious person：
+Alright! Get ready quickly and be careful not to bring any prohibited items on the plane!
+
+Me：
+Prohibited items? Oops! I forgot to check!

@@ -101,6 +101,22 @@ public class chat_event : MonoBehaviour
 			DialogueImage.sprite = DialogueSprite[chat_index];
 		}
 	}
+
+	public void NextChat_Tmp4(){
+		if(chat_index == length-1){
+			//按鈕交互關掉、要不要按鈕出現
+			ButtonDialogue.interactable = false;
+			Debug.Log("按鈕交互已關閉");
+			ButtonYes.SetActive(true);
+			ButtonNo.SetActive(true);
+		}
+		else{
+			//if(chat_index == )
+			chat_index++;
+			DialogueImage.sprite = DialogueSprite[chat_index];
+		}
+	}
+
 	/*public string[] person;
 	public string[] context;
 	public Sprite[] frame;	

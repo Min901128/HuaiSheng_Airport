@@ -33,7 +33,7 @@ public class Lottery : MonoBehaviour
 			if(ShowNotPolledCountDown>=0) ShowNotPolledCountDown-=Time.deltaTime;
 			if(ShowNotPolledCountDown<=0){
 				Debug.Log("REVEALING NOT POLLED CARD");
-				for (int i = 0; i < 2; i++)
+				for (int i = 0; i < 3; i++)
 				{
 					Cards[i].sprite=CardValueSprite[CardValueToSpriteIndex(LotteryValues[i])];
 				}
@@ -45,7 +45,7 @@ public class Lottery : MonoBehaviour
 			PutCardsBackCountDown-=Time.deltaTime;
 			if(PutCardsBackCountDown<=0){
 				Debug.Log("PUT CARDS BACK");
-				for (int i = 0; i < 2; i++)
+				for (int i = 0; i < 3; i++)
 				{
 					Cards[i].sprite=CardBackSprite;
 				}

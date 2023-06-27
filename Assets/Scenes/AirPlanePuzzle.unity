@@ -1675,7 +1675,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time Cost\uFF1A   Seconds\n"
+  m_Text: "Time Cost\uFF1A     Seconds\n"
 --- !u!222 &704362169
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2184,6 +2184,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7a4fb822a0ebe034ebaea5ef174503b0, type: 3}
   - {fileID: 21300000, guid: 33a3fec44aa91cf4aa03817bb94ef4a9, type: 3}
   - {fileID: 21300000, guid: 0ddef983d1d6e5a43b4098d4f7a6ad45, type: 3}
+  person2: []
+  person3: []
+  person4: []
+  person2Image: {fileID: 0}
+  person3Image: {fileID: 0}
+  person4Image: {fileID: 0}
+  ButtonDialogue2: {fileID: 0}
+  ButtonDialogue3: {fileID: 0}
+  ButtonDialogue4: {fileID: 0}
+  Button2: {fileID: 0}
+  Button3: {fileID: 0}
+  Button4: {fileID: 0}
 --- !u!4 &865111391
 Transform:
   m_ObjectHideFlags: 0
@@ -2876,7 +2888,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time Cost\uFF1A   Seconds\n"
+  m_Text: "Time Cost\uFF1A    Seconds\n"
 --- !u!222 &1077225275
 CanvasRenderer:
   m_ObjectHideFlags: 0

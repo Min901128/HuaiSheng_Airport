@@ -10,18 +10,10 @@ public class BordingSchedule : MonoBehaviour
     public Text CorrectAnswer;
     public GameObject MyAnswer;
     public GameObject Panel_Next;
+    public GameObject ButtonNext;
+    public GameObject ButtonTryAgain;
     public GameObject Correct;
     public GameObject Error;
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     public void OnButtonClick(){
         Country.text = Button.tag;
@@ -43,10 +35,11 @@ public class BordingSchedule : MonoBehaviour
         Panel_Next.SetActive(true);Debug.Log(CorrectAnswer.text);
         if(MyAnswer.tag == CorrectAnswer.text){
             Correct.SetActive(true);
-            
+            ButtonNext.SetActive(true);
         }
         else{
             Error.SetActive(true);
+            ButtonTryAgain.SetActive(true);
         }
     }
 }

@@ -1565,8 +1565,8 @@ RectTransform:
   - {fileID: 810877296}
   - {fileID: 1602503066}
   - {fileID: 192750250}
-  - {fileID: 1754633300}
   - {fileID: 1355010570}
+  - {fileID: 1754633300}
   - {fileID: 1494818078}
   m_Father: {fileID: 2097671164}
   m_RootOrder: 4
@@ -3109,8 +3109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.069271, y: -55.126495}
-  m_SizeDelta: {x: 300, y: 150}
+  m_AnchoredPosition: {x: 267, y: 36}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &440815991
 MonoBehaviour:
@@ -3221,8 +3221,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dc07574b62e92174db8e7c8d5ac65894, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8886,7 +8886,7 @@ RectTransform:
   m_Children:
   - {fileID: 1150691448}
   m_Father: {fileID: 200359078}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12611,12 +12611,12 @@ RectTransform:
   - {fileID: 440815990}
   - {fileID: 1614886127}
   m_Father: {fileID: 200359078}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 18, y: -273}
-  m_SizeDelta: {x: -48, y: 317}
+  m_AnchoredPosition: {x: 1.8114929, y: -266.9294}
+  m_SizeDelta: {x: 107.564, y: 489.1055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1754633301
 MonoBehaviour:
@@ -12638,8 +12638,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6c397af8954978e4a889b2790020dc89, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -13054,7 +13054,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u524D\u5F80\u4E0B\u4E00\u500B\u5834\u666F"
+  m_Text: 
 --- !u!222 &1803426887
 CanvasRenderer:
   m_ObjectHideFlags: 0

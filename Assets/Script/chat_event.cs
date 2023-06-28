@@ -92,6 +92,7 @@ public class chat_event : MonoBehaviour
 	public void NextChat_BeforeBording(){
 		if(chat_index == length-1){ //最後一個對話
 			Button.SetActive(false);
+			NextPanel.SetActive(true);
 		}
 		else if(chat_index == 3){
 			ButtonDialogue.interactable = false;
@@ -108,6 +109,7 @@ public class chat_event : MonoBehaviour
 		if(chat_index == length-1){
 			Button.SetActive(false);
 			NextPanel.SetActive(true);
+			item1.SetActive(true);
 		}
 		else{
 			if(chat_index == 4){
@@ -121,6 +123,7 @@ public class chat_event : MonoBehaviour
 	public void NextChat_Tmp4(){
 		if(chat_index == length-1){ //最後一個對話
 			Button.SetActive(false);
+			NextPanel.SetActive(true);
 		}
 		else if(chat_index == 5){
 			ButtonDialogue.interactable = false;

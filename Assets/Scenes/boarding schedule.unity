@@ -2896,7 +2896,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u932F\u8AA4"
+  m_Text: 
 --- !u!222 &385733817
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3085,6 +3085,7 @@ GameObject:
   - component: {fileID: 440815991}
   - component: {fileID: 440815995}
   - component: {fileID: 440815996}
+  - component: {fileID: 440815997}
   m_Layer: 5
   m_Name: next_scene
   m_TagString: Untagged
@@ -3201,6 +3202,18 @@ MonoBehaviour:
           m_StringArgument: ar
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 440815997}
+        m_TargetAssemblyTypeName: Lottery, Assembly-CSharp
+        m_MethodName: addTicket
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &440815993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3266,6 +3279,25 @@ MonoBehaviour:
   passed: {fileID: 0}
   not_yet: {fileID: 0}
   scene_names: []
+--- !u!114 &440815997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440815989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b0ced77b18a2844b37b3d98df085ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cards: []
+  LotteryCountText: {fileID: 0}
+  MoneyText: {fileID: 0}
+  Hint_Text: {fileID: 0}
+  DisableAllPanel: {fileID: 0}
+  CardBackSprite: {fileID: 0}
+  CardValueSprite: []
 --- !u!1 &466543892
 GameObject:
   m_ObjectHideFlags: 0
@@ -11552,7 +11584,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6B63\u78BA"
+  m_Text: 
 --- !u!222 &1631936637
 CanvasRenderer:
   m_ObjectHideFlags: 0

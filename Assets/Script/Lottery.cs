@@ -20,6 +20,7 @@ public class Lottery : MonoBehaviour
 	{
 		// PlayerPrefs.SetInt(LotteryCountKey,50);
 		// PlayerPrefs.Save();
+		if(CardValueSprite.Length==0)return;
 		LotteryCount=PlayerPrefs.GetInt(LotteryCountKey,0);
 		Money=PlayerPrefs.GetInt(MoneyKey,0);
 		LotteryCountText.text=LotteryCount.ToString();
@@ -29,6 +30,7 @@ public class Lottery : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		if(CardValueSprite.Length==0)return;
 		if(PollState=="REVEALING NOT POLLED CARD"){
 			if(ShowNotPolledCountDown>=0) ShowNotPolledCountDown-=Time.deltaTime;
 			if(ShowNotPolledCountDown<=0){
@@ -53,6 +55,12 @@ public class Lottery : MonoBehaviour
 				DisableAllPanel.SetActive(false);
 			}
 		}
+	}
+
+	public void addTicket(){
+		LotteryCount=PlayerPrefs.GetInt(LotteryCountKey,0);
+		PlayerPrefs.SetInt(LotteryCountKey,LotteryCount+1);
+		PlayerPrefs.Save();
 	}
 
 	public void Poll(int id){

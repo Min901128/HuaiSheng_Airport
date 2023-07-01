@@ -37,6 +37,9 @@ TagManager:
   - final2
   - final3
   - final4
+  - 50
+  - 100
+  - 150
   layers:
   - Default
   - TransparentFX

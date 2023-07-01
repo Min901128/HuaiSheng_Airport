@@ -5,38 +5,30 @@ using UnityEngine.UI;
 
 public class DutyFreeShop : MonoBehaviour
 {
-    public Text Money;
-    public Text Panel_Comform_Text_CostMoney;
-    public Text CurrentMoney;
-    public GameObject ComfirmButton;
+    public Text AmountOfMoney;
+    public Text DutyFreeMoney;
 
-    public void UpdateComfirmPanel(){
-        Panel_Comform_Text_CostMoney.text = Money.text;
-        ComfirmButton.SetActive(true);
+    string MoneyKey = "MoneyKey";
+
+    void Start(){
+        
     }
 
-    public void MoneyCalculator(int ButtonTag){
-        int NumberOfMoney = int.Parse(CurrentMoney.text);
+    void Update(){
+        int Money = PlayerPrefs.GetInt(MoneyKey);
+        AmountOfMoney.text = Money.ToString();
+    }    
+    
+    public void MoneyCalculator(GameObject freeshop){
+       
+        int Money = PlayerPrefs.GetInt(MoneyKey); 
 
-        if(ButtonTag == 1){
-            NumberOfMoney = NumberOfMoney - 500;
-        }
-        else if(ButtonTag == 2){
-            NumberOfMoney = NumberOfMoney - 1000;
-        }
-        else if(ButtonTag == 3){
-            NumberOfMoney = NumberOfMoney - 3000;
-        }
-        else if(ButtonTag == 4){
-            NumberOfMoney = NumberOfMoney -1000;
-        }
-        else if(ButtonTag == 5){
-            NumberOfMoney = NumberOfMoney - 300;
-        }
-        else{
-            NumberOfMoney = NumberOfMoney - 800;
-        }
+        Money = Money - int.Parse(freeshop.tag);
 
-        CurrentMoney.text = NumberOfMoney.ToString();
+        PlayerPrefs.SetInt("MoneyKey", Money);
+    }
+
+    public void UpdateTheMoneyOfPanel(GameObject freeshop){
+        DutyFreeMoney.text = freeshop.tag;
     }
 }

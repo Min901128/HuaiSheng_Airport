@@ -49,53 +49,56 @@ public class AR_StateHandler : MonoBehaviour
 		return 0;
 	}
 
+	enum SceneStatusEnum
+	{
+		GO=0,
+		NOTYET=1,
+		HAVEBEEN=2
+	}
+
+	SceneStatusEnum SceneStatusFn(int value_scanned){
+		string P1Key = "P1", P2Key = "P2", P3Key = "P3", P4Key = "P4";
+		int[] pnIndex = new int[]{
+			PlayerPrefs.GetInt(P1Key),
+			PlayerPrefs.GetInt(P2Key),
+			PlayerPrefs.GetInt(P3Key),
+			PlayerPrefs.GetInt(P4Key)
+		};
+
+		int finished_state=PlayerPrefs.GetInt("finished_state",0);
+
+		if(value_scanned/10==6){
+			if(finished_state==50) return SceneStatusEnum.GO;
+			if(finished_state==60 && pnIndex[value_scanned%10-1]==0) return SceneStatusEnum.GO;
+			return SceneStatusEnum.HAVEBEEN;
+		}
+
+		if(value_scanned==finished_state+10) return SceneStatusEnum.GO;
+		if(value_scanned>finished_state+10) return SceneStatusEnum.NOTYET;
+		if(value_scanned<finished_state+10) return SceneStatusEnum.HAVEBEEN;
+		
+		return SceneStatusEnum.GO;
+	}
+
 	public void onScanned(int value_scanned){
 		Debug.Log(value_scanned);
 		int finished_state=PlayerPrefs.GetInt("finished_state",0);
 		Debug.Log(finished_state);
-		if(finished_state==60 && value_scanned/10==6)
-		{
+		if(SceneStatusFn(value_scanned)==SceneStatusEnum.GO){
 			SceneManager.LoadScene(scene_names[map_playerperf_index_to_scence_index(value_scanned)]);
-		}
-		if(finished_state==60)
-		{
-			string P1Key = "P1";
-			string P2Key = "P2";
-			string P3Key = "P3";
-			string P4Key = "P4";
-			int P1Index = PlayerPrefs.GetInt(P1Key); 
-			int P2Index = PlayerPrefs.GetInt(P2Key);
-			int P3Index = PlayerPrefs.GetInt(P3Key);
-			int P4Index = PlayerPrefs.GetInt(P4Key);
-			if(P1Index==1 && P2Index==1 && P3Index==1 && P4Index==1){
-				SceneManager.LoadScene(scene_names[map_playerperf_index_to_scence_index(value_scanned)]);
-			}else{
-				hint_countdown=3f;
-				counting=true;
-				not_yet.SetActive(true);
-			}
 			return;
 		}
-		if(finished_state==50 && value_scanned/10==6)
-		{
-			SceneManager.LoadScene(scene_names[map_playerperf_index_to_scence_index(value_scanned)]);
-		}
-
-		if(value_scanned==finished_state+10)
-		{
-			SceneManager.LoadScene(scene_names[map_playerperf_index_to_scence_index(value_scanned)]);
-		}
-		if(value_scanned>finished_state+10)
-		{
+		if(SceneStatusFn(value_scanned)==SceneStatusEnum.NOTYET){
 			hint_countdown=3f;
 			counting=true;
 			not_yet.SetActive(true);
+			return;
 		}
-		if(value_scanned<finished_state+10)
-		{
+		if(SceneStatusFn(value_scanned)==SceneStatusEnum.HAVEBEEN){
 			hint_countdown=3f;
 			counting=true;
 			passed.SetActive(true);
+			return;
 		}
 	}
 }

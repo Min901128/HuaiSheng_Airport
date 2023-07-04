@@ -11,6 +11,7 @@ public class Game_Handler : MonoBehaviour
 	public GameObject canvas;
 	public GameObject Game_Start_Obj;
 	public GameObject Game_End_Obj;
+	GameObject CurrentTarget;
 	int Score_Points=0;
 	float count_down=30;
 	bool is_started=false;
@@ -45,16 +46,18 @@ public class Game_Handler : MonoBehaviour
 
 	public void End_Game(){
 		Game_End_Obj.SetActive(true);
+		Destroy(CurrentTarget,0);
 	}
 
 	public void createNewTarget()
 	{
-		GameObject.Instantiate(
+		CurrentTarget=GameObject.Instantiate(
 			target_sample,
 			new Vector3(Random.Range(0, 1920),Random.Range(0, 1080), 0),
 			Quaternion.identity,
 			canvas.transform
-		).SetActive(true);
+		);
+		CurrentTarget.SetActive(true);
 	}
 
 	public void onTargetClick(GameObject target_clicked)

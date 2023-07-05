@@ -499,6 +499,7 @@ GameObject:
   - component: {fileID: 591889590}
   - component: {fileID: 591889589}
   - component: {fileID: 591889588}
+  - component: {fileID: 591889592}
   m_Layer: 5
   m_Name: "Button_\u85B0\u8863\u8349\u9999\u9762\u819C"
   m_TagString: Untagged
@@ -610,6 +611,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 591889592}
+        m_TargetAssemblyTypeName: Bag, Assembly-CSharp
+        m_MethodName: GetItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &591889589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,6 +681,22 @@ RectTransform:
   m_AnchoredPosition: {x: 241, y: 201}
   m_SizeDelta: {x: 655, y: 791}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &591889592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591889587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90d3e71372fc5a4b8b5e3e38d2af475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BagGameObjects: []
+  TokyoItems: []
+  SeoulItems: []
+  SingaporeItems: []
 --- !u!1 &651635928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,6 +1203,7 @@ GameObject:
   - component: {fileID: 1162883503}
   - component: {fileID: 1162883502}
   - component: {fileID: 1162883501}
+  - component: {fileID: 1162883505}
   m_Layer: 5
   m_Name: "Button_\u8D85\u6642\u7A7A\u64B2\u514B\u724C"
   m_TagString: Untagged
@@ -1285,6 +1315,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1162883505}
+        m_TargetAssemblyTypeName: Bag, Assembly-CSharp
+        m_MethodName: GetItem
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1162883502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,6 +1385,22 @@ RectTransform:
   m_AnchoredPosition: {x: -179, y: 201}
   m_SizeDelta: {x: 655, y: 791}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1162883505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162883500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90d3e71372fc5a4b8b5e3e38d2af475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BagGameObjects: []
+  TokyoItems: []
+  SeoulItems: []
+  SingaporeItems: []
 --- !u!1 &1165403483
 GameObject:
   m_ObjectHideFlags: 0

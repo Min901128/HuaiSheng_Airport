@@ -9,9 +9,13 @@ public class Passport_Somestuff : MonoBehaviour
     public int toScreenshot;
     public int toShowScreenShot;
     public Image PassportPanel;
+	public GameObject PassportBlock;
+	string somekey="finished_state";
     // Start is called before the first frame update
     void Start()
     {
+		int next_state=PlayerPrefs.GetInt(somekey,0);
+		if(next_state>=10) PassportBlock.SetActive(false);
         if(toShowScreenShot==1){
             try
             {
@@ -32,7 +36,7 @@ public class Passport_Somestuff : MonoBehaviour
             }
             catch (System.Exception)
             {
-                throw;
+                // throw;
             }
         }
     }

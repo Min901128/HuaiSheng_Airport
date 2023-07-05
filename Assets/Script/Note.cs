@@ -17,6 +17,8 @@ public class Note : MonoBehaviour
     public Sprite[] IsCollected; //是否完成蒐集
     public Button Button;
 
+	public GameObject NoteBlock;
+	string somekey="finished_state";
 
     private const string P1Key = "P1";
     private const string P2Key = "P2";
@@ -26,6 +28,10 @@ public class Note : MonoBehaviour
 
     void Start()
     {
+		int finished_state=PlayerPrefs.GetInt(somekey,0);
+		if(finished_state>=50){
+			NoteBlock.SetActive(false);
+		}
         int P1Index = PlayerPrefs.GetInt(P1Key); 
         int P2Index = PlayerPrefs.GetInt(P2Key);
         int P3Index = PlayerPrefs.GetInt(P3Key);

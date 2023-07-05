@@ -10,8 +10,6 @@ public class Mission_List_Handler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		PlayerPrefs.SetInt(somekey,90);
-		PlayerPrefs.Save();
 		closeAllMissions();
 		if(missons.Length==0)return;
 		int next_state=PlayerPrefs.GetInt(somekey,0);

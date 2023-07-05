@@ -590,7 +590,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 61cc951dd90d731458d3f997434fee23, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8687bb42f57ccf41857f4d25bcdabd0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -954,7 +954,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cac7fe5fe898a9549896754c32a19c62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 02cf4201a5c96934b8deced1e6a65ebd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1720,9 +1720,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tickets:
-  - {fileID: 21300000, guid: 529706d32b87f694294148929cfdfc14, type: 3}
-  - {fileID: 21300000, guid: 59e6e10f2d00cd24db54e84f852a9efc, type: 3}
-  - {fileID: 21300000, guid: 92523db4436c7e24d82c518fb553b8c9, type: 3}
+  - {fileID: 21300000, guid: 27b3ee6c4a1b1a64bbb0e5a218603bdc, type: 3}
+  - {fileID: 21300000, guid: 86a4f46c645d3c84597b80c42d3f8c91, type: 3}
+  - {fileID: 21300000, guid: b7f2d394e3d483240a5ae95a54dbd009, type: 3}
   TicketImage: {fileID: 1020714967}
 --- !u!1 &1068162106
 GameObject:

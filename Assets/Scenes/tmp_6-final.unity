@@ -1673,9 +1673,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1718800302}
-        m_TargetAssemblyTypeName: chat_event, Assembly-CSharp
-        m_MethodName: Final_1
+      - m_Target: {fileID: 1718800304}
+        m_TargetAssemblyTypeName: Chat_Event_Mission6_Final, Assembly-CSharp
+        m_MethodName: NextChat_Final1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1805,9 +1805,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1718800302}
-        m_TargetAssemblyTypeName: chat_event, Assembly-CSharp
-        m_MethodName: Final_4
+      - m_Target: {fileID: 1718800304}
+        m_TargetAssemblyTypeName: Chat_Event_Mission6_Final, Assembly-CSharp
+        m_MethodName: NextChat_Final4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2166,9 +2166,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1718800302}
-        m_TargetAssemblyTypeName: chat_event, Assembly-CSharp
-        m_MethodName: Final_3
+      - m_Target: {fileID: 1718800304}
+        m_TargetAssemblyTypeName: Chat_Event_Mission6_Final, Assembly-CSharp
+        m_MethodName: NextChat_Final3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3679,7 +3679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1718800303}
-  - component: {fileID: 1718800302}
+  - component: {fileID: 1718800304}
   m_Layer: 0
   m_Name: chat_event
   m_TagString: Untagged
@@ -3687,7 +3687,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1718800302
+--- !u!4 &1718800303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718800301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1718800304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3696,21 +3710,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1718800301}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b698675c634eb940ad3e87af98ba690, type: 3}
+  m_Script: {fileID: 11500000, guid: e8e4e3a3da197b54288897516ac6bd02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueImage: {fileID: 813225689}
   Button: {fileID: 813225685}
   ButtonDialogue: {fileID: 813225687}
-  ButtonYes: {fileID: 0}
-  ButtonNo: {fileID: 0}
-  NextPanel: {fileID: 0}
-  item1: {fileID: 0}
-  item2: {fileID: 0}
-  item3: {fileID: 0}
-  item4: {fileID: 0}
-  item5: {fileID: 0}
-  item6: {fileID: 0}
+  person2Image: {fileID: 1930540139}
+  Button2: {fileID: 1930540136}
+  ButtonDialogue2: {fileID: 1930540138}
+  person3Image: {fileID: 903828058}
+  Button3: {fileID: 903828055}
+  ButtonDialogue3: {fileID: 903828057}
+  person4Image: {fileID: 870785192}
+  Button4: {fileID: 870785189}
+  ButtonDialogue4: {fileID: 870785191}
   DialogueSprite:
   - {fileID: 21300000, guid: a611d289593bc8a409f403885accb328, type: 3}
   - {fileID: 21300000, guid: 0c61c9cab3cb2204cb4697fbe8d9936d, type: 3}
@@ -3747,29 +3761,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f876de769a6bf6047bbee3c384fdb9c2, type: 3}
   - {fileID: 21300000, guid: e7719c88cf5d5eb4ca2bf700fe84716e, type: 3}
   - {fileID: 21300000, guid: b4e271cdb489b0d49be954c0ad12d516, type: 3}
-  person2Image: {fileID: 1930540139}
-  person3Image: {fileID: 903828058}
-  person4Image: {fileID: 870785192}
-  ButtonDialogue2: {fileID: 1930540138}
-  ButtonDialogue3: {fileID: 903828057}
-  ButtonDialogue4: {fileID: 870785191}
-  Button2: {fileID: 1930540136}
-  Button3: {fileID: 903828055}
-  Button4: {fileID: 870785189}
---- !u!4 &1718800303
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718800301}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1866969672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3931,9 +3922,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1718800302}
-        m_TargetAssemblyTypeName: chat_event, Assembly-CSharp
-        m_MethodName: Final_2
+      - m_Target: {fileID: 1718800304}
+        m_TargetAssemblyTypeName: Chat_Event_Mission6_Final, Assembly-CSharp
+        m_MethodName: NextChat_Final2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

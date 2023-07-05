@@ -484,9 +484,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 423441378}
-        m_TargetAssemblyTypeName: chat_event, Assembly-CSharp
-        m_MethodName: NextChat_Temp_6_2__6_3
+      - m_Target: {fileID: 423441380}
+        m_TargetAssemblyTypeName: Chat_Event_Mission6_2To6_4, Assembly-CSharp
+        m_MethodName: NextChat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -543,7 +543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423441379}
-  - component: {fileID: 423441378}
+  - component: {fileID: 423441380}
   m_Layer: 0
   m_Name: chat_event
   m_TagString: Untagged
@@ -551,53 +551,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &423441378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423441377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b698675c634eb940ad3e87af98ba690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueImage: {fileID: 218750976}
-  Button: {fileID: 218750972}
-  ButtonDialogue: {fileID: 218750974}
-  ButtonYes: {fileID: 0}
-  ButtonNo: {fileID: 0}
-  NextPanel: {fileID: 1198314509}
-  item1: {fileID: 0}
-  item2: {fileID: 0}
-  item3: {fileID: 0}
-  item4: {fileID: 0}
-  item5: {fileID: 0}
-  item6: {fileID: 0}
-  DialogueSprite:
-  - {fileID: 21300000, guid: d50e8c9a895be4543af62333c41c100c, type: 3}
-  - {fileID: 21300000, guid: 88a2d6572e1767f4e899d702118c82a9, type: 3}
-  - {fileID: 21300000, guid: 1bf2b81b5c685824687b581ba9b26a72, type: 3}
-  - {fileID: 21300000, guid: 3d04c022c96c9094aa6ae30a84a8241e, type: 3}
-  - {fileID: 21300000, guid: ff41bdd6d35a01e4b8224765e9057011, type: 3}
-  - {fileID: 21300000, guid: ecb0ed33e4311bf40ae8f533693921c3, type: 3}
-  - {fileID: 21300000, guid: 04cc180f0391e4748b1bc9edd60a625e, type: 3}
-  - {fileID: 21300000, guid: da97e6998128a1e4c95329b25a8fdbcc, type: 3}
-  - {fileID: 21300000, guid: f2752a220c6ee2e4399791521f23d139, type: 3}
-  - {fileID: 21300000, guid: 87befda262dc6e445a72b66a9b9a6a09, type: 3}
-  person2: []
-  person3: []
-  person4: []
-  person2Image: {fileID: 0}
-  person3Image: {fileID: 0}
-  person4Image: {fileID: 0}
-  ButtonDialogue2: {fileID: 0}
-  ButtonDialogue3: {fileID: 0}
-  ButtonDialogue4: {fileID: 0}
-  Button2: {fileID: 0}
-  Button3: {fileID: 0}
-  Button4: {fileID: 0}
 --- !u!4 &423441379
 Transform:
   m_ObjectHideFlags: 0
@@ -612,6 +565,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423441380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423441377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8e3b85d9911d44fb23e675d3b06327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueImage: {fileID: 218750976}
+  Button: {fileID: 218750972}
+  ButtonDialogue: {fileID: 218750974}
+  NextPanel: {fileID: 1198314509}
+  DialogueSprite:
+  - {fileID: 21300000, guid: d50e8c9a895be4543af62333c41c100c, type: 3}
+  - {fileID: 21300000, guid: 88a2d6572e1767f4e899d702118c82a9, type: 3}
+  - {fileID: 21300000, guid: 1bf2b81b5c685824687b581ba9b26a72, type: 3}
+  - {fileID: 21300000, guid: 3d04c022c96c9094aa6ae30a84a8241e, type: 3}
+  - {fileID: 21300000, guid: ff41bdd6d35a01e4b8224765e9057011, type: 3}
+  - {fileID: 21300000, guid: ecb0ed33e4311bf40ae8f533693921c3, type: 3}
+  - {fileID: 21300000, guid: 04cc180f0391e4748b1bc9edd60a625e, type: 3}
+  - {fileID: 21300000, guid: da97e6998128a1e4c95329b25a8fdbcc, type: 3}
+  - {fileID: 21300000, guid: f2752a220c6ee2e4399791521f23d139, type: 3}
+  - {fileID: 21300000, guid: 87befda262dc6e445a72b66a9b9a6a09, type: 3}
 --- !u!1 &1198314509
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,88 +827,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1443847354
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1443847356}
-  - component: {fileID: 1443847355}
-  m_Layer: 0
-  m_Name: "\u4E0B\u4E00\u6B65\u6309\u9215_\u7843\u7802\u8D6D\u7D05"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1443847355
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443847354}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bb428cf24d177464ba1845a89b2d099f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 10.8, y: 10.8}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1443847356
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1443847354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1520.4983, y: 734.25836, z: -1611.937}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1620435783
 GameObject:
   m_ObjectHideFlags: 0

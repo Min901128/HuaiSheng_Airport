@@ -544,9 +544,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 473679134}
-        m_TargetAssemblyTypeName: chat_event, Assembly-CSharp
-        m_MethodName: NextChat_Temp_6_1
+      - m_Target: {fileID: 473679136}
+        m_TargetAssemblyTypeName: Chat_Event_Mission6_1, Assembly-CSharp
+        m_MethodName: NextChat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -779,7 +779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 473679135}
-  - component: {fileID: 473679134}
+  - component: {fileID: 473679136}
   m_Layer: 0
   m_Name: chat_event
   m_TagString: Untagged
@@ -787,50 +787,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &473679134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473679133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b698675c634eb940ad3e87af98ba690, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueImage: {fileID: 393152335}
-  Button: {fileID: 393152331}
-  ButtonDialogue: {fileID: 393152332}
-  ButtonYes: {fileID: 441194714}
-  ButtonNo: {fileID: 763740767}
-  NextPanel: {fileID: 1198314509}
-  item1: {fileID: 0}
-  item2: {fileID: 0}
-  item3: {fileID: 0}
-  item4: {fileID: 0}
-  item5: {fileID: 0}
-  item6: {fileID: 0}
-  DialogueSprite:
-  - {fileID: 21300000, guid: 010a6ae8b5316fb449f025274e90ce67, type: 3}
-  - {fileID: 21300000, guid: 0a8d2667bb592b345ada00f7679994d3, type: 3}
-  - {fileID: 21300000, guid: 9da5b75e5b1831f448debbeb85ff1a1b, type: 3}
-  - {fileID: 21300000, guid: e2024ccc753b2284f804f29e4948fb3f, type: 3}
-  - {fileID: 21300000, guid: 2352244b7fe83dc468d8bae1909521da, type: 3}
-  - {fileID: 21300000, guid: 846f61acfd39c1c4180ba5239a620210, type: 3}
-  - {fileID: 21300000, guid: 5a7a65fcbdeea844dabf80448952bda7, type: 3}
-  person2: []
-  person3: []
-  person4: []
-  person2Image: {fileID: 0}
-  person3Image: {fileID: 0}
-  person4Image: {fileID: 0}
-  ButtonDialogue2: {fileID: 0}
-  ButtonDialogue3: {fileID: 0}
-  ButtonDialogue4: {fileID: 0}
-  Button2: {fileID: 0}
-  Button3: {fileID: 0}
-  Button4: {fileID: 0}
 --- !u!4 &473679135
 Transform:
   m_ObjectHideFlags: 0
@@ -845,6 +801,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &473679136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473679133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd623aa4b07bf984c98907490e3231ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueImage: {fileID: 393152335}
+  Button: {fileID: 393152331}
+  ButtonDialogue: {fileID: 393152332}
+  ButtonYes: {fileID: 441194714}
+  ButtonNo: {fileID: 763740767}
+  NextPanel: {fileID: 1198314509}
+  DialogueSprite:
+  - {fileID: 21300000, guid: 010a6ae8b5316fb449f025274e90ce67, type: 3}
+  - {fileID: 21300000, guid: 0a8d2667bb592b345ada00f7679994d3, type: 3}
+  - {fileID: 21300000, guid: 9da5b75e5b1831f448debbeb85ff1a1b, type: 3}
+  - {fileID: 21300000, guid: e2024ccc753b2284f804f29e4948fb3f, type: 3}
+  - {fileID: 21300000, guid: 2352244b7fe83dc468d8bae1909521da, type: 3}
+  - {fileID: 21300000, guid: 846f61acfd39c1c4180ba5239a620210, type: 3}
+  - {fileID: 21300000, guid: 5a7a65fcbdeea844dabf80448952bda7, type: 3}
 --- !u!1 &550817015
 GameObject:
   m_ObjectHideFlags: 0

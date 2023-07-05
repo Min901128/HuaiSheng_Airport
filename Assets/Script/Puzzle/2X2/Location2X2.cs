@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class Location2X2 : MonoBehaviour
 {    
+    public GameObject Country;
     //C是Collider
     public GameObject C1;
     public GameObject C2;
@@ -16,6 +17,7 @@ public class Location2X2 : MonoBehaviour
     private bool IsLocation2 = false;
     private bool IsLocation3 = false;
     private bool IsLocation4 = false;
+
     void OnCollisionStay2D(Collision2D coll)
     {
         Debug.Log("與" + coll.gameObject.tag + "發生碰撞");
@@ -37,12 +39,30 @@ public class Location2X2 : MonoBehaviour
                 CallFinishManager.Invoke();
             }
         }
+        //當Singapore的P3撞到C4
+        if(coll.gameObject.tag == "Collider4" && gameObject.tag == "Puzzle3" && IsLocation3 == false && Country.tag == "Singapore"){
+            if(Input.GetMouseButtonUp(0)){
+                gameObject.transform.position = C4.transform.position;
+                Debug.Log("定位完成");
+                IsLocation3 = true;
+                CallFinishManager.Invoke();
+            }
+        }
         //當P3撞到C3
         if(coll.gameObject.tag == "Collider3" && gameObject.tag == "Puzzle3" && IsLocation3 == false){
             if(Input.GetMouseButtonUp(0)){
                 gameObject.transform.position = C3.transform.position;
                 Debug.Log("定位完成");
                 IsLocation3 = true;
+                CallFinishManager.Invoke();
+            }
+        }
+        //當Singapore的P4撞到C3
+        if(coll.gameObject.tag == "Collider3" && gameObject.tag == "Puzzle4" && IsLocation4 == false && Country.tag == "Singapore"){
+            if(Input.GetMouseButtonUp(0)){
+                gameObject.transform.position = C3.transform.position;
+                Debug.Log("定位完成");
+                IsLocation4 = true;
                 CallFinishManager.Invoke();
             }
         }

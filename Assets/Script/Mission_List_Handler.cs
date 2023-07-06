@@ -12,8 +12,15 @@ public class Mission_List_Handler : MonoBehaviour
     {
 		closeAllMissions();
 		if(missons.Length==0)return;
-		int next_state=PlayerPrefs.GetInt(somekey,0);
-		for (int i = 0; i < next_state/10; i++)
+		int finished_state=PlayerPrefs.GetInt(somekey,0);
+		if(finished_state==80){
+			foreach (var btn in btns)
+			{
+				btn.SetActive(true);
+			}
+			return;
+		}
+		for (int i = 0; i < finished_state/10; i++)
 		{
 			btns[i].SetActive(true);
 		}

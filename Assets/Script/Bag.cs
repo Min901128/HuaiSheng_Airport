@@ -11,10 +11,12 @@ public class Bag : MonoBehaviour
 	public Sprite[] SeoulItems;
 	public Sprite[] SingaporeItems;
 	Sprite[] CurrentItems;
-	string MessageKey = "Country";
+	string MessageKey = "Country", MoneyKey="MoneyKey";
+	int money;
 	// Start is called before the first frame update
 	void Start()
 	{
+		money=PlayerPrefs.GetInt(MoneyKey,0);
 		if(BagGameObjects.Length==0)return;
 		for (int i = 0; i < ItemCount; i++)
 		{
@@ -35,6 +37,7 @@ public class Bag : MonoBehaviour
 		}
 		for(int i=0;i<3;i++)
 		{
+			if(CurrentItems==null) break;
 			BagGameObjects[i+3].GetComponent<Image>().sprite=CurrentItems[i];
 		}
 	}
@@ -47,6 +50,18 @@ public class Bag : MonoBehaviour
 
 	public void GetItem(int id){
 		PlayerPrefs.SetInt("ItemId"+id,1);
+		PlayerPrefs.Save();
+	}
+
+	public void IncreaseMoney(int mount){
+		money+=mount;
+		PlayerPrefs.SetInt(MoneyKey,money);
+		PlayerPrefs.Save();
+	}
+
+	public void DecreaseMoney(int mount){
+		money-=mount;
+		PlayerPrefs.SetInt(MoneyKey,money);
 		PlayerPrefs.Save();
 	}
 }

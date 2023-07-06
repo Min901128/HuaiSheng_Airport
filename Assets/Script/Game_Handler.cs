@@ -11,6 +11,7 @@ public class Game_Handler : MonoBehaviour
 	public GameObject canvas;
 	public GameObject Game_Start_Obj;
 	public GameObject Game_End_Obj;
+	public Text FinalScoreText;
 	GameObject CurrentTarget;
 	int Score_Points=0;
 	float count_down=30;
@@ -46,6 +47,7 @@ public class Game_Handler : MonoBehaviour
 
 	public void End_Game(){
 		Game_End_Obj.SetActive(true);
+		FinalScoreText.text=Score_Points.ToString();
 		Destroy(CurrentTarget,0);
 	}
 

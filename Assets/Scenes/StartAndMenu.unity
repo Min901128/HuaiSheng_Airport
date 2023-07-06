@@ -1037,7 +1037,6 @@ GameObject:
   - component: {fileID: 310574305}
   - component: {fileID: 310574304}
   - component: {fileID: 310574303}
-  - component: {fileID: 310574307}
   - component: {fileID: 310574306}
   m_Layer: 5
   m_Name: Scanner
@@ -1109,18 +1108,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 310574307}
-        m_TargetAssemblyTypeName: SetNextARState, Assembly-CSharp
-        m_MethodName: setState
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 310574306}
         m_TargetAssemblyTypeName: ChangeSceneWithButton, Assembly-CSharp
         m_MethodName: LoadScene
@@ -1181,18 +1168,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97892d503bf105b488bb9c34916243e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &310574307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310574301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90fcda0ef7d1eb64cb4d7295828ba521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &313840135
@@ -2363,7 +2338,6 @@ GameObject:
   - component: {fileID: 899814516}
   - component: {fileID: 899814515}
   - component: {fileID: 899814514}
-  - component: {fileID: 899814518}
   - component: {fileID: 899814517}
   m_Layer: 5
   m_Name: Button_Start
@@ -2508,18 +2482,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97892d503bf105b488bb9c34916243e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &899814518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899814512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90fcda0ef7d1eb64cb4d7295828ba521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &919990592
@@ -3335,8 +3297,14 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1199288919}
         m_TargetAssemblyTypeName: ChangeSceneWithButton, Assembly-CSharp
         m_MethodName: LoadScene
@@ -4434,7 +4402,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1482182989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97892d503bf105b488bb9c34916243e7, type: 3}
+  m_Script: {fileID: 11500000, guid: 59ab54d2dd549f3468e119eb590d9821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1482182993
@@ -5384,7 +5352,6 @@ GameObject:
   - component: {fileID: 1703454335}
   - component: {fileID: 1703454334}
   - component: {fileID: 1703454333}
-  - component: {fileID: 1703454332}
   - component: {fileID: 1703454331}
   m_Layer: 5
   m_Name: Clean
@@ -5422,18 +5389,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97892d503bf105b488bb9c34916243e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1703454332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703454329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90fcda0ef7d1eb64cb4d7295828ba521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1703454333
@@ -5480,29 +5435,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1703454332}
-        m_TargetAssemblyTypeName: SetNextARState, Assembly-CSharp
-        m_MethodName: setState
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1703454331}
-        m_TargetAssemblyTypeName: ChangeSceneWithButton, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 1307951666}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: ar
-          m_BoolArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1703454334
 MonoBehaviour:

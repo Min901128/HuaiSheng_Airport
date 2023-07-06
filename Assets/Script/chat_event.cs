@@ -35,6 +35,7 @@ public class chat_event : MonoBehaviour
 	int length;
 	
 	void Start(){
+		chat_index = 0;
 		length = DialogueSprite.Length;
 		DialogueImage.sprite = DialogueSprite[0];
 		person2Image.sprite = person2[0];

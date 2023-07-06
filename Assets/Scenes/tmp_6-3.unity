@@ -821,8 +821,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1926454730}
-        m_TargetAssemblyTypeName: chat_event, Assembly-CSharp
-        m_MethodName: NextChat_Temp_6_2__6_3
+        m_TargetAssemblyTypeName: Chat_Event_Mission6_2To6_4, Assembly-CSharp
+        m_MethodName: NextChat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -896,21 +896,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1926454729}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b698675c634eb940ad3e87af98ba690, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c8e3b85d9911d44fb23e675d3b06327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueImage: {fileID: 1708705330}
   Button: {fileID: 1708705326}
   ButtonDialogue: {fileID: 1708705328}
-  ButtonYes: {fileID: 0}
-  ButtonNo: {fileID: 0}
   NextPanel: {fileID: 1198314509}
-  item1: {fileID: 0}
-  item2: {fileID: 0}
-  item3: {fileID: 0}
-  item4: {fileID: 0}
-  item5: {fileID: 0}
-  item6: {fileID: 0}
   DialogueSprite:
   - {fileID: 21300000, guid: 207f0de807cae4c4294656a067067552, type: 3}
   - {fileID: 21300000, guid: 2419939aaa4f0364b8310b133bd587d7, type: 3}
@@ -919,18 +911,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 81d6f986cb13a45448cfca6775327ffc, type: 3}
   - {fileID: 21300000, guid: 25ca3df72b570fc4cb8fd75f0f8cf03e, type: 3}
   - {fileID: 21300000, guid: 994679b8179507e4c87d5ed8b3189482, type: 3}
-  person2: []
-  person3: []
-  person4: []
-  person2Image: {fileID: 0}
-  person3Image: {fileID: 0}
-  person4Image: {fileID: 0}
-  ButtonDialogue2: {fileID: 0}
-  ButtonDialogue3: {fileID: 0}
-  ButtonDialogue4: {fileID: 0}
-  Button2: {fileID: 0}
-  Button3: {fileID: 0}
-  Button4: {fileID: 0}
 --- !u!4 &1926454731
 Transform:
   m_ObjectHideFlags: 0

@@ -15,16 +15,19 @@ public class AddScore : MonoBehaviour
 
     public Text CScore;
 
-    public GameObject FinishPanel;
+    public GameObject ScorePanel;
+    public Text CScoreInScorePanel;
    
     private int CorrectScore;
+    private bool isPanelOpened = false;
     void Start() {
         CorrectScore = int.Parse(CScore.text);
     }
 
     void Update(){
-        if(!item1.activeSelf && !item2.activeSelf && !item3.activeSelf && !item4.activeSelf && !item5.activeSelf && !item6.activeSelf){
-            FinishPanel.SetActive(true);
+        if(!item1.activeSelf && !item2.activeSelf && !item3.activeSelf && !item4.activeSelf && !item5.activeSelf && !item6.activeSelf && isPanelOpened == false){
+            ScorePanel.SetActive(true);
+            isPanelOpened = true;
         }
     }
 
@@ -32,5 +35,6 @@ public class AddScore : MonoBehaviour
         CorrectScore++;
         string CScore_String = CorrectScore.ToString();
         CScore.text = CScore_String;
+        CScoreInScorePanel.text = CScore_String;
     }
 }

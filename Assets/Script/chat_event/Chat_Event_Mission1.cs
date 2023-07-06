@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Chat_Event_Mission1 : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class Chat_Event_Mission1 : MonoBehaviour
 
     void Start()
     {
+		bool situation = Convert.ToBoolean(PlayerPrefs.GetInt("Mission1Dialogue"));
+		Button.SetActive(!situation);
+
+		PlayerPrefs.SetInt("Mission1Dialogue", 0);
+        PlayerPrefs.Save();
+
         chat_index = 0;
 		length = DialogueSprite.Length;
 		DialogueImage.sprite = DialogueSprite[0];

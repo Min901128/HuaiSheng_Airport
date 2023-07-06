@@ -2,18 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Chat_Event_Mission8 : MonoBehaviour
 {
     public Image DialogueImage;
 	public GameObject Button;
     public Sprite[] DialogueSprite;
+	
 
     int chat_index = 0;
 	int length;
 
     void Start()
     {
+		bool situation = Convert.ToBoolean(PlayerPrefs.GetInt("DutyFreeDialogue"));
+		Button.SetActive(!situation);
+
+		PlayerPrefs.SetInt("DutyFreeDialogue", 0);
+        PlayerPrefs.Save();
+
         chat_index = 0;
 		length = DialogueSprite.Length;
 		DialogueImage.sprite = DialogueSprite[0];

@@ -80,6 +80,6 @@ public class DutyFreeShop : MonoBehaviour
     }
 
     /*public void Start(){
-        PlayerPrefs.SetInt("MoneyKey", 150);
+        PlayerPrefs.SetInt("MoneyKey", 300);
     }*/
 }

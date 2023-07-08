@@ -38,7 +38,7 @@ public class Bag : MonoBehaviour
 		for(int i=0;i<3;i++)
 		{
 			if(CurrentItems==null) break;
-			BagGameObjects[i+3].GetComponent<Image>().sprite=CurrentItems[i];
+			BagGameObjects[i+4].GetComponent<Image>().sprite=CurrentItems[i];
 		}
 	}
 

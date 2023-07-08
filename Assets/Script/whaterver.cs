@@ -10,7 +10,7 @@ public class whaterver : MonoBehaviour
     void Start()
     {
         // PlayerPrefs.DeleteAll();
-         int finished_state=PlayerPrefs.GetInt("finished_state",0);
+        int finished_state=PlayerPrefs.GetInt("finished_state",0);
         if(finished_state>=10)passport.SetActive(false);
         if(finished_state>=50)record.SetActive(false);
     }

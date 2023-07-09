@@ -10,12 +10,16 @@ public class Bag : MonoBehaviour
 	public Sprite[] TokyoItems;
 	public Sprite[] SeoulItems;
 	public Sprite[] SingaporeItems;
+	public GameObject BagLock;
 	Sprite[] CurrentItems;
 	string MessageKey = "Country", MoneyKey="MoneyKey";
+	string somekey="finished_state";
 	int money;
 	// Start is called before the first frame update
 	void Start()
 	{
+		int finished_state=PlayerPrefs.GetInt(somekey,0);
+		if(finished_state>=30) BagLock.SetActive(false);
 		money=PlayerPrefs.GetInt(MoneyKey,0);
 		if(BagGameObjects.Length==0)return;
 		for (int i = 0; i < ItemCount; i++)

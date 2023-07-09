@@ -70,7 +70,12 @@ public class AR_StateHandler : MonoBehaviour
 		if(value_scanned/10==6){
 			if(finished_state==50) return SceneStatusEnum.GO;
 			if(finished_state==60 && pnIndex[value_scanned%10-1]==0) return SceneStatusEnum.GO;
-			return SceneStatusEnum.HAVEBEEN;
+			if(finished_state==60) return SceneStatusEnum.HAVEBEEN;
+		}
+
+		if(value_scanned==70){
+			if(finished_state==65) return SceneStatusEnum.GO;
+			if(finished_state==60) return SceneStatusEnum.NOTYET;
 		}
 
 		if(value_scanned==finished_state+10) return SceneStatusEnum.GO;

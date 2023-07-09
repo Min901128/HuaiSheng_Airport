@@ -32,6 +32,7 @@ public class Note : MonoBehaviour
 		if(finished_state>=50){
 			NoteBlock.SetActive(false);
 		}
+		if(finished_state>=65) NoteBlock.SetActive(true);
         int P1Index = PlayerPrefs.GetInt(P1Key); 
         int P2Index = PlayerPrefs.GetInt(P2Key);
         int P3Index = PlayerPrefs.GetInt(P3Key);

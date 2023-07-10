@@ -19,13 +19,14 @@ public class Bag : MonoBehaviour
 	void Start()
 	{
 		int finished_state=PlayerPrefs.GetInt(somekey,0);
-		if(finished_state>=30) BagLock.SetActive(false);
+		if(finished_state>=30 && BagLock!=null) BagLock.SetActive(false);
 		money=PlayerPrefs.GetInt(MoneyKey,0);
 		if(BagGameObjects.Length==0)return;
 		for (int i = 0; i < ItemCount; i++)
 		{
 			if(PlayerPrefs.GetInt("ItemId"+i,0)==1)
 			{
+				if(BagGameObjects[i]!=null)
 				BagGameObjects[i].SetActive(true);
 			}
 		}

@@ -17,6 +17,8 @@ public class AddScore : MonoBehaviour
 
     public GameObject ScorePanel;
     public Text CScoreInScorePanel;
+
+	string PackageScoreKey="PackageScoreKey";
    
     private int CorrectScore;
     private bool isPanelOpened = false;
@@ -34,6 +36,7 @@ public class AddScore : MonoBehaviour
     public void AddScoreFunction(){
         CorrectScore++;
         string CScore_String = CorrectScore.ToString();
+		PlayerPrefs.SetInt(PackageScoreKey, CorrectScore);
         CScore.text = CScore_String;
         CScoreInScorePanel.text = CScore_String;
     }

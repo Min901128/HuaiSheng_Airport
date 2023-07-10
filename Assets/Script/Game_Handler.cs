@@ -17,6 +17,7 @@ public class Game_Handler : MonoBehaviour
 	float count_down=30;
 	bool is_started=false;
 	bool is_ended=false;
+	string UFOKey="UFOKey";
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +49,7 @@ public class Game_Handler : MonoBehaviour
 	public void End_Game(){
 		Game_End_Obj.SetActive(true);
 		FinalScoreText.text=Score_Points.ToString();
+		PlayerPrefs.SetInt(UFOKey, Score_Points);
 		Destroy(CurrentTarget,0);
 	}
 

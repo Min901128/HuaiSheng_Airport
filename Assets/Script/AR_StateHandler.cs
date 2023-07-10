@@ -8,6 +8,7 @@ public class AR_StateHandler : MonoBehaviour
 {
 	public GameObject passed;
 	public GameObject not_yet;
+	public GameObject suspect;
 	public string[] scene_names;
 	float hint_countdown;
 	bool counting=false;
@@ -26,6 +27,7 @@ public class AR_StateHandler : MonoBehaviour
 			counting=false;
 			passed.SetActive(false);
 			not_yet.SetActive(false);
+			suspect.SetActive(false);
 		}
 	}
 
@@ -53,7 +55,8 @@ public class AR_StateHandler : MonoBehaviour
 	{
 		GO=0,
 		NOTYET=1,
-		HAVEBEEN=2
+		HAVEBEEN=2,
+		SUSPECT=3,
 	}
 
 	SceneStatusEnum SceneStatusFn(int value_scanned){
@@ -75,7 +78,7 @@ public class AR_StateHandler : MonoBehaviour
 
 		if(value_scanned==70){
 			if(finished_state==65) return SceneStatusEnum.GO;
-			if(finished_state==60) return SceneStatusEnum.NOTYET;
+			if(finished_state==60) return SceneStatusEnum.SUSPECT;
 		}
 
 		if(value_scanned==finished_state+10) return SceneStatusEnum.GO;
@@ -103,6 +106,12 @@ public class AR_StateHandler : MonoBehaviour
 			hint_countdown=3f;
 			counting=true;
 			passed.SetActive(true);
+			return;
+		}
+		if(SceneStatusFn(value_scanned)==SceneStatusEnum.SUSPECT){
+			hint_countdown=3f;
+			counting=true;
+			suspect.SetActive(true);
 			return;
 		}
 	}

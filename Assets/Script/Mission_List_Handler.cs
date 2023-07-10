@@ -13,7 +13,9 @@ public class Mission_List_Handler : MonoBehaviour
 		closeAllMissions();
 		if(missons.Length==0)return;
 		int finished_state=PlayerPrefs.GetInt(somekey,0);
-		for (int i = 0; i < finished_state/10 + 1; i++)
+		int PanelCount=finished_state/10 + 1;
+		if(finished_state==60) PanelCount--;
+		for (int i = 0; i < PanelCount; i++)
 		{
 			btns[i].SetActive(true);
 		}

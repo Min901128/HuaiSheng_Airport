@@ -9,6 +9,7 @@ public class Chat_Event_Mission8 : MonoBehaviour
     public Image DialogueImage;
 	public GameObject Button;
     public Sprite[] DialogueSprite;
+	public GameObject ButtonBackToMenu;
 	
 
     int chat_index = 0;
@@ -18,6 +19,7 @@ public class Chat_Event_Mission8 : MonoBehaviour
     {
 		bool situation = Convert.ToBoolean(PlayerPrefs.GetInt("DutyFreeDialogue"));
 		Button.SetActive(!situation);
+		ButtonBackToMenu.SetActive(situation);
 
 		PlayerPrefs.SetInt("DutyFreeDialogue", 0);
         PlayerPrefs.Save();

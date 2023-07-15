@@ -10,7 +10,7 @@ public class FinalTicket : MonoBehaviour
 	public Image TicketImage;
 	public Text MoneyText, PackageScoreText, UFOText, PuzzleText;
 	string MessageKey = "Country";
-	string MoneyKey="MoneyKey", PackageScoreKey="PackageScoreKey", UFOKey="UFOKey", PuzzleKey="PuzzleKey";
+	string MoneyKey="MoneyKey", PackageScoreKey="PackageScoreKey", UFOKey="UFOKey", Puzzle1Key="Puzzle1Key", Puzzle2Key="Puzzle2Key";
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -27,7 +27,7 @@ public class FinalTicket : MonoBehaviour
 		MoneyText.text = PlayerPrefs.GetInt(MoneyKey).ToString();
 		PackageScoreText.text = PlayerPrefs.GetInt(PackageScoreKey).ToString()+" / 6";
 		UFOText.text = PlayerPrefs.GetInt(UFOKey).ToString();
-		PuzzleText.text = PlayerPrefs.GetInt(PuzzleKey).ToString();
+		PuzzleText.text = "Level1 : " + PlayerPrefs.GetInt(Puzzle1Key).ToString() + " s\nLevel2 : " + PlayerPrefs.GetInt(Puzzle2Key).ToString() + " s";
 	}
 
 	// Update is called once per frame

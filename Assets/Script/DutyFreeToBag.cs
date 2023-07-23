@@ -29,7 +29,7 @@ public class DutyFreeToBag : MonoBehaviour
 		D2.SetActive(situation2);
 		D3.SetActive(situation3);
 
-        CurrentMoney.text = PlayerPrefs.GetInt("MoneyKey").ToString();
-		Country_Name.text = PlayerPrefs.GetString("Country");
+		if(CurrentMoney) CurrentMoney.text = PlayerPrefs.GetInt("MoneyKey").ToString();
+		if (Country_Name) Country_Name.text = PlayerPrefs.GetString("Country");
     }
 }

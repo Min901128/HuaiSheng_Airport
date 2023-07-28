@@ -310,33 +310,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b698675c634eb940ad3e87af98ba690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  person:
-  - "\u5C0F\u7F8E"
-  - "\u6211"
-  - "\u6642\u7A7A\u8B66\u5BDF"
-  - "\u6A5F\u4E0A\u4E58\u5BA2"
-  - "\u795E\u79D8\u4EBA\u58EB"
-  - "\u7A7A\u59D0"
-  - "\u963F\u5FB7"
-  context:
-  - "\u4ECA\u5929\u5C31\u662F\u51FA\u570B\u7684\u65E5\u5B50\u2026\u4E0D\u77E5\u9053\u70BA\u751A\u9EBC\uFF0C\u6709\u7A2E\u4ECA\u5929\u6703\u4F86\u5834\u5947\u5999\u5192\u96AA\u7684\u611F\u89BA\u2026. "
-  - "\u563F!\u4F60\u5728\u653E\u7A7A\u4EC0\u9EBC?\u8981\u5230\u6211\u5011\u4E86! "
-  - "\u554A!\u7D42\u65BC\u6392\u5230\u6211\u4E86"
-  - "\u8ACB\u51FA\u793A\u4F60\u7684\u8B49\u4EF6 "
-  - 1
-  - 2
-  - 3
-  frame:
-  - {fileID: 21300000, guid: 41d7e199eec27f44bb6745d28e05712e, type: 3}
-  - {fileID: 21300000, guid: 3795d816333560442b9894bff26cfd46, type: 3}
-  - {fileID: 21300000, guid: 490e5992db1867141897bcd9faee66e4, type: 3}
-  - {fileID: 21300000, guid: 484c07ecd9c820a42bd72a115b4944ab, type: 3}
-  - {fileID: 21300000, guid: 93efc145ed1922442a845ac8826e1d92, type: 3}
-  - {fileID: 21300000, guid: 1ee311365b2e8764e81782bea2fb23c7, type: 3}
-  - {fileID: 21300000, guid: 57244608ce1575e4b81ab64e73a9424a, type: 3}
-  person_obj: {fileID: 1536661773}
-  context_obj: {fileID: 1233036387}
-  ImageFrame: {fileID: 1512968746}
+  DialogueImage: {fileID: 0}
+  Button: {fileID: 0}
+  ButtonDialogue: {fileID: 0}
+  ButtonYes: {fileID: 0}
+  ButtonNo: {fileID: 0}
+  NextPanel: {fileID: 0}
+  item1: {fileID: 0}
+  item2: {fileID: 0}
+  item3: {fileID: 0}
+  item4: {fileID: 0}
+  item5: {fileID: 0}
+  item6: {fileID: 0}
+  DialogueSprite: []
+  person2: []
+  person3: []
+  person4: []
+  person2Image: {fileID: 0}
+  person3Image: {fileID: 0}
+  person4Image: {fileID: 0}
+  ButtonDialogue2: {fileID: 0}
+  ButtonDialogue3: {fileID: 0}
+  ButtonDialogue4: {fileID: 0}
+  Button2: {fileID: 0}
+  Button3: {fileID: 0}
+  Button4: {fileID: 0}
 --- !u!4 &382637491
 Transform:
   m_ObjectHideFlags: 0
@@ -399,10 +397,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

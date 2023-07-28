@@ -16,6 +16,8 @@ public class MakePassport : MonoBehaviour
     public Text YourSex;
     public Text YourBirthPlace;
     public Text YourBirthDay;
+
+	string PassportNameKey = "PassportNameKey";
     
     public void ShowData(){
         YourName.text = Name.text;
@@ -23,5 +25,6 @@ public class MakePassport : MonoBehaviour
         YourSex.text = Sex.text;
         YourBirthPlace.text = BirthPlace.text;
         //YourBirthDay.text = BirthDay.text;
+		PlayerPrefs.SetString(PassportNameKey, Name.text);
     }
 }

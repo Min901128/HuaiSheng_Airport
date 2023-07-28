@@ -9,7 +9,7 @@ public class DutyFreeLock : MonoBehaviour
     void Start()
     {
         int finished_state=PlayerPrefs.GetInt(somekey,0);
-		if(finished_state>=70){
+		if(finished_state>=80){
 			gameObject.SetActive(false);
 		}
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System; 
 
 public class Bag : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class Bag : MonoBehaviour
 	string MessageKey = "Country", MoneyKey="MoneyKey";
 	string somekey="finished_state";
 	int money;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -40,6 +42,7 @@ public class Bag : MonoBehaviour
 		if(CountryName=="Seoul"){
 			CurrentItems=SeoulItems;
 		}
+
 		for(int i=0;i<3;i++)
 		{
 			if(CurrentItems==null) break;

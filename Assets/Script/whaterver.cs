@@ -9,7 +9,7 @@ public class whaterver : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // PlayerPrefs.DeleteAll();
+        //  PlayerPrefs.DeleteAll();
         int finished_state=PlayerPrefs.GetInt("finished_state",0);
         if(finished_state>=10)passport.SetActive(false);
         if(finished_state>=50)record.SetActive(false);

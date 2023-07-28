@@ -11,7 +11,11 @@ public class Mission_List_Handler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		closeAllMissionsAndArrows();
+		foreach (var arrow in arrows)
+		{
+			arrow.SetActive(false);
+		}
+		closeAllMissions();
 		if(missons.Length==0)return;
 		int finished_state=PlayerPrefs.GetInt(somekey,0);
 		int PanelCount=finished_state/10 + 1;
@@ -29,19 +33,15 @@ public class Mission_List_Handler : MonoBehaviour
         
     }
 
-	void closeAllMissionsAndArrows(){
+	void closeAllMissions(){
 		foreach (var mission in missons)
 		{
 			mission.SetActive(false);
 		}
-		foreach (var arrow in arrows)
-		{
-			arrow.SetActive(false);
-		}
 	}
 
 	public void openMission(int id){
-		closeAllMissionsAndArrows();
+		closeAllMissions();
 		missons[id].SetActive(true);
 	}
 }

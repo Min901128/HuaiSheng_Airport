@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DutyFreeShop : MonoBehaviour
 {
     public Text AmountOfMoney;
+    public Text AmountOfTicket;
     public Text DutyFreeMoney;
 
     public GameObject NotEnoughPanel;
@@ -24,14 +25,19 @@ public class DutyFreeShop : MonoBehaviour
     public GameObject Price3;
 
     string MoneyKey = "MoneyKey";
+    string LotteryCountKey="LotteryCountKey";
 
     int Money;
+    int Ticket;
 
     public HaveYouEverBought HaveYouEverBought;
 
     void Update(){
         Money = PlayerPrefs.GetInt(MoneyKey);
         AmountOfMoney.text = Money.ToString();
+
+        Ticket = PlayerPrefs.GetInt(LotteryCountKey);
+        AmountOfTicket.text = Ticket.ToString();
     }    
     
     public void MoneyCalculator(GameObject freeshop){

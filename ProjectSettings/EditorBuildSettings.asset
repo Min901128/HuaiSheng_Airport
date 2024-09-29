@@ -59,4 +59,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/tmp_6-final.unity
     guid: 7e75768c0e6f45b4aabd93e70ebffbe8
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 18b18ec5e479fcc4095089c6396dc11e,
+      type: 2}

@@ -17,17 +17,21 @@ public class Tmp4_MoneyCaculator : MonoBehaviour
     int Money;
 
     public Chat_Event_Mission4 Chat_Event_Mission4;
+	public GameObject money;
 
-    public void MoneyCalculator(GameObject Item){
-        Money = PlayerPrefs.GetInt(MoneyKey); 
-        int ItemPrice = int.Parse(Item.tag);
-        
-        if(Money < ItemPrice){
-            //錢不夠，把錢不夠的panel打開
-            Panel_NotEnough.SetActive(true);
+	public Bag bag;
+	public void MoneyCalculator(GameObject Item)
+	{
+		Money = PlayerPrefs.GetInt(MoneyKey);
+		int ItemPrice = int.Parse(Item.tag);
 
-            //Debug.Log("錢不夠");
-        }
+		if (Money < ItemPrice)
+		{
+			//錢不夠，把錢不夠的panel打開
+			Panel_NotEnough.SetActive(true);
+
+			//Debug.Log("錢不夠");
+		}
         else{
 
             //把確認的Panel關掉、撲克牌面膜不用謝謝的可見也要關掉
@@ -44,8 +48,11 @@ public class Tmp4_MoneyCaculator : MonoBehaviour
             Button_Dialogue.interactable = true;
             //按鈕上掛Chat_Event_Mission4.AddIndex
             Chat_Event_Mission4.AddIndex();
-        }
+			money.SetActive(false);
+			int itemID = Item.tag == "20" ? 1 : 3;
+			bag.GetItem(itemID);
+		}
 
 
-    }
+	}
 }

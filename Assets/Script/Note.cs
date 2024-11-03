@@ -56,6 +56,10 @@ public class Note : MonoBehaviour
         Person2.sprite = Person2Sprite[P2Index];
         Person3.sprite = Person3Sprite[P3Index];
         Person4.sprite = Person4Sprite[P4Index];
-        Collected.sprite = IsCollected[C1Index];
+		Person1.SetNativeSize();
+		Person2.SetNativeSize();
+		Person3.SetNativeSize();
+		Person4.SetNativeSize();
+		Collected.sprite = IsCollected[C1Index];
     }
 }

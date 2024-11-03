@@ -779,8 +779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8, y: 250}
-  m_SizeDelta: {x: -838.4686, y: -913.4736}
+  m_AnchoredPosition: {x: 22.082901, y: 320}
+  m_SizeDelta: {x: -778.3029, y: -806.8516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &299645671
 MonoBehaviour:
@@ -815,7 +815,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8ACB\u554F\u795E\u79D8\u4EBA\u5047\u626E\u4E86\u8AB0?"
+  m_Text: "\u8ACB\u554F\u795E\u79D8\u4EBA\u5047\u626E\u4E86\u8AB0?\nWho did the mystery
+    person dress up as?"
 --- !u!222 &299645672
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2141,10 +2142,10 @@ RectTransform:
   m_Father: {fileID: 2006970830}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 802, y: -378}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -176, y: 213}
+  m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895979486
 MonoBehaviour:
@@ -2307,7 +2308,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8d26d02709ea90246a06986a6a5d7bf7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2686e672bd764b942b6a262c9f2a9e0d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -15,10 +15,12 @@ public class Chat_Event_Mission4 : MonoBehaviour
 	public GameObject item4;
 	public GameObject item5;
 	public GameObject item6;
+	public GameObject money;
+	string MoneyKey = "MoneyKey";
 
-    public Sprite[] DialogueSprite;
+	public Sprite[] DialogueSprite;
 
-    int chat_index = 0;
+	int chat_index = 0;
 	int length;
 
     void Start()
@@ -44,8 +46,11 @@ public class Chat_Event_Mission4 : MonoBehaviour
 			item4.SetActive(true);
 			item5.SetActive(true);
 			item6.SetActive(true);
+			money.SetActive(true);
+			money.GetComponentInChildren<Text>().text = PlayerPrefs.GetInt(MoneyKey, 0).ToString();
 		}
-		else{
+		else
+		{
 			chat_index++;
 			DialogueImage.sprite = DialogueSprite[chat_index];
 		}

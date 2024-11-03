@@ -33,9 +33,9 @@ public class CheckPrictureToken : MonoBehaviour
 			sprite = Sprite.Create(tex, new Rect(0, 0, rect_width, rect_height), Vector2.zero);
 			Photo.sprite=sprite;
 			PhotoOnPassport.sprite=sprite;
-			Button.transform.position = new Vector3(1163, 850, 0);
+			//Button.transform.position = new Vector3(1163, 850, 0);
 			PhotoForSetActive.SetActive(true);
-			transform.position = new Vector3(1542, 850, 0);
+			//transform.position = new Vector3(1542, 850, 0);
 		}
 		catch (System.Exception)
 		{
@@ -68,9 +68,9 @@ public class CheckPrictureToken : MonoBehaviour
 			sprite = Sprite.Create(tex, new Rect(0, 0, rect_width, rect_height), Vector2.zero);
 			Photo.sprite=sprite;
 			PhotoOnPassport.sprite=sprite;
-			Button.transform.position = new Vector3(1163, 850, 0);
+			///Button.transform.position = new Vector3(1163, 850, 0);
 			PhotoForSetActive.SetActive(true);
-			transform.position = new Vector3(1542, 850, 0);
+			///transform.position = new Vector3(1542, 850, 0);
 		}
 		catch (System.Exception)
 		{

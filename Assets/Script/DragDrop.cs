@@ -38,5 +38,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public void DisableDragDrop()
     {
         IsDraggable = false;
+        var rectTransform = GetComponent<RectTransform>();
+        rectTransform.SetAsFirstSibling();
     }
 }

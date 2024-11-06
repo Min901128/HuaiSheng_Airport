@@ -1596,7 +1596,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time Cost\uFF1A     Seconds\n"
+  m_Text: "Time Cost\uFF1A       Seconds\n"
 --- !u!222 &265775574
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4131,7 +4131,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time Cost\uFF1A     Seconds\n"
+  m_Text: "Time Cost\uFF1A       Seconds\n"
 --- !u!222 &704362169
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6024,7 +6024,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time Cost\uFF1A     Seconds\n"
+  m_Text: "Time Cost\uFF1A       Seconds\n"
 --- !u!222 &886443368
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9470,7 +9470,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time Cost\uFF1A    Seconds\n"
+  m_Text: "Time Cost\uFF1A       Seconds\n"
 --- !u!222 &1379590336
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11428,7 +11428,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time Cost\uFF1A    Seconds\n"
+  m_Text: "Time Cost\uFF1A       Seconds\n"
 --- !u!222 &1678602706
 CanvasRenderer:
   m_ObjectHideFlags: 0

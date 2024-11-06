@@ -243,6 +243,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 9199941}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9199941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,6 +473,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2067632093}
         m_TargetAssemblyTypeName: IsFinish2X2, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 20206569}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1658,6 +1682,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 317100745}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &317100743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2436,6 +2472,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 473551381}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &473551381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2682,6 +2730,18 @@ MonoBehaviour:
       - m_Target: {fileID: 690314430}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 512801676}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2985,6 +3045,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 548681232}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &548681232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3229,6 +3301,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1494604644}
         m_TargetAssemblyTypeName: IsFinish2X2, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 582557997}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3489,6 +3573,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1274727163}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 614554340}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4197,6 +4293,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 736667600}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &736667598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4443,6 +4551,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1274727163}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 753784410}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4807,6 +4927,18 @@ MonoBehaviour:
       - m_Target: {fileID: 919010974}
         m_TargetAssemblyTypeName: IsFinish2X2, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 792815972}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5430,6 +5562,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 853528784}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &853528784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5739,6 +5883,18 @@ MonoBehaviour:
       - m_Target: {fileID: 690314430}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 878698067}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6747,6 +6903,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1066058202}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1066058202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7072,6 +7240,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1082539116}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1082539114
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7237,6 +7417,18 @@ MonoBehaviour:
       - m_Target: {fileID: 719666298}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1107407247}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7692,6 +7884,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1494604644}
         m_TargetAssemblyTypeName: IsFinish2X2, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1131981963}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8278,6 +8482,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1152542617}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1166747287
 GameObject:
   m_ObjectHideFlags: 0
@@ -8538,6 +8754,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1189498128}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1189498128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8732,6 +8960,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1274727163}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1278316566}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8985,6 +9225,18 @@ MonoBehaviour:
       - m_Target: {fileID: 719666298}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1319204892}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9524,6 +9776,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1430303656}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1430303654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10054,6 +10318,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1512088974}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1512088972
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10419,6 +10695,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1611566900}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1611566898
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10636,6 +10924,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1635732710}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1635732710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10754,6 +11054,18 @@ MonoBehaviour:
       - m_Target: {fileID: 719666298}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1671246133}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10928,6 +11240,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1274727163}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1672310675}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11425,6 +11749,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1714667914}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1714667912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11864,6 +12200,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1805144276}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1805144274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12081,6 +12429,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1842354104}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1842354104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12289,6 +12649,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1870191753}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1870191753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12407,6 +12779,18 @@ MonoBehaviour:
       - m_Target: {fileID: 719666298}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1885603847}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12819,6 +13203,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1958281333}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1958281333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13025,6 +13421,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1963405991}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1963405989
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13190,6 +13598,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1274727163}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1977324914}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13883,6 +14303,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2035582320}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2035682255
 GameObject:
   m_ObjectHideFlags: 0
@@ -14306,6 +14738,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2083219665}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &2083219667
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14641,6 +15085,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2123813876}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2123813876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14806,6 +15262,18 @@ MonoBehaviour:
       - m_Target: {fileID: 690314430}
         m_TargetAssemblyTypeName: IsFinish3X3, Assembly-CSharp
         m_MethodName: FinishCaculator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2130013003}
+        m_TargetAssemblyTypeName: DragDrop, Assembly-CSharp
+        m_MethodName: DisableDragDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -16,8 +16,8 @@ public class ChoosePhoto : MonoBehaviour
         PhotoForSetActive.SetActive(true);
         Photo.sprite = GetComponent<Image>().sprite;
         PhotoOnPassport.sprite = GetComponent<Image>().sprite;
-        Button.transform.position = new Vector3(1163, 850, 0);
+        //Button.transform.position = new Vector3(1163, 850, 0);
         ChoosePanel.SetActive(false);
-		ButtonTakePicture.transform.position = new Vector3(1542, 850, 0);
+		//ButtonTakePicture.transform.position = new Vector3(1542, 850, 0);
     }
 }

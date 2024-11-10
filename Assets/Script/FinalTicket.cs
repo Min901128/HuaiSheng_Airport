@@ -30,22 +30,34 @@ public class FinalTicket : MonoBehaviour
 		PackageScoreText.text = PlayerPrefs.GetInt(PackageScoreKey).ToString()+" / 6";
 		UFOText.text = PlayerPrefs.GetInt(UFOKey).ToString();
 		PuzzleText.text = "Level1 : " + PlayerPrefs.GetInt(Puzzle1Key).ToString() + " s\nLevel2 : " + PlayerPrefs.GetInt(Puzzle2Key).ToString() + " s";
-		
-		string filename = Path.Combine(Application.persistentDataPath,"selfie.png");
-		var rawData = System.IO.File.ReadAllBytes(filename);
-		Texture2D tex = new Texture2D(2, 2); // Create an empty Texture; size doesn't matter (she said)
-		tex.LoadImage(rawData);
-		int rect_width,rect_height;
-		if(tex.width>=tex.height){
-			rect_width=tex.height;
-			rect_height=tex.height;
-		}else{
-			rect_width=tex.width;
-			rect_height=tex.width;
-		}
-		SelfieImage.sprite = Sprite.Create(tex, new Rect(0, 0, rect_width, rect_height), Vector2.zero);
 
 		NameText.text = PlayerPrefs.GetString(PassportNameKey);
+
+		try
+		{
+			string filename = Path.Combine(Application.persistentDataPath, "selfie.png");
+			var rawData = System.IO.File.ReadAllBytes(filename);
+			Texture2D tex = new Texture2D(2, 2); // Create an empty Texture; size doesn't matter (she said)
+			tex.LoadImage(rawData);
+			int rect_width, rect_height;
+			if (tex.width >= tex.height)
+			{
+				rect_width = tex.height;
+				rect_height = tex.height;
+			}
+			else
+			{
+				rect_width = tex.width;
+				rect_height = tex.width;
+			}
+			SelfieImage.sprite = Sprite.Create(tex, new Rect(0, 0, rect_width, rect_height), Vector2.zero);
+		}
+		catch (System.Exception)
+		{
+			SelfieImage.gameObject.SetActive(false);
+			throw;
+		}
+
 	}
 
 	// Update is called once per frame
